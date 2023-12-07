@@ -1,6 +1,6 @@
 ################################
 #     Lab 4  - Placement       #
-#     SUNEDU - Le Thanh Tuan   #
+#                              #
 ################################
 
 set step "placement"
