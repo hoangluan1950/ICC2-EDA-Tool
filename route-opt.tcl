@@ -1,6 +1,6 @@
 ###########################################
-##     Lab 8  - Route                     #
-##     SUNEDU - Le Thanh Tuan             #
+##     Lab 8  - Route Opt                 #
+##                                        #
 ###########################################
 set step "routeOpt"
 set previuos_step "route"
