@@ -1,6 +1,6 @@
 ###########################################
 ##     Lab 6  - Post CTS Optimization     #
-##     SUNEDU - Le Thanh Tuan             #
+##     SUNEDU - Le Thanh Tua             #
 ###########################################
 
 set step "post_cts"
