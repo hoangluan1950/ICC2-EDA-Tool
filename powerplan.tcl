@@ -1,6 +1,6 @@
 ################################
 #     Lab 3  - Powerplan       #
-#     SUNEDU - Le Thanh Tuan   #
+#                              #
 ################################
 
 # B1. Copy lib from floorplan step, then open block
