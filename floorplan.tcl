@@ -1,6 +1,6 @@
 #########################################
 #          Lab 2 - Floorplanning        #
-#          SUNEDU/Le Thanh Tuan         #
+#                                       #
 #########################################
 
 # B1. Copy lib from import design step, then open block:
