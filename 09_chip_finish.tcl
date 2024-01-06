@@ -37,7 +37,7 @@ connect_pg_net
 
 ####################
 # ICV In-Design DRC 
-set_app_options -name signoff.check_drc.runset              -value ../ref/icv_runsets/saed32nm_1p9m_drc_rules.rs
+set_app_options -name signoff.check_drc.runset              -value ./ref/icv_runsets/saed32nm_1p9m_drc_rules.rs
 set_app_options -name signoff.check_drc.max_errors_per_rule -value 1000
 set_app_options -name signoff.check_drc.run_dir             -value "z_icvDRC_run"
 
@@ -52,7 +52,7 @@ save_lib
 ####################
 # ICV In-Design Metal Fill
 
-set_app_options -name signoff.create_metal_fill.runset -value ../ref/icv_runsets/saed32nm_1p9m_mfill_rules.rs
+set_app_options -name signoff.create_metal_fill.runset -value ./ref/icv_runsets/saed32nm_1p9m_mfill_rules.rs
 
 signoff_create_metal_fill
 
@@ -65,8 +65,8 @@ save_block
 
 
 
-close_lib -all
-exit
+#close_lib -all
+#exit
 
 
 
