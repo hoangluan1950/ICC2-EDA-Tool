@@ -1,0 +1,78 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Corner Scaling is off, multiplier is 1.000000
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (20000 20000) (17422480 6256560)
+Number of VARs = 1
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 3
+Number of used supplies = 0
+Blocked VAs: 
+INFO: auto-mv setup started.
+ORB: timingScenario ss_Cmax_125c_func timingCorner ss_Cmax_125c
+INFO: Using corner ss_Cmax_125c for worst leakage corner
+Using default layer M4
+nplLib: sample lib cell area 10.674047
+nplLib: sample lib cell leakage 0.00341553
+new cutoff lpd: 1.21956e-02
+nplLib: sample lib cell leakage 0.00341553
+maxCornerId = 2
+corner=ss_Cmax_125c, tran factor=1.0000 (0.2432 / 0.2432)
+corner=ss_Cmax_m40c, tran factor=0.9191 (0.2235 / 0.2432)
+maxCornerId = 2
+ORB: Nominal = 0.0524849  Design MT = inf  Target = 0.2431773 (4.633 nominal)  MaxRC = 0.168325
+****************************************
+Report : clock qor
+        -type summary
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 13:18:13 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===================================================
+==== Summary Reporting for Corner ss_Cmax_125c ====
+===================================================
+
+======================================================== Summary Table for Corner ss_Cmax_125c =========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_125c_func
+SYS_CLK                                 M,D      2073     10       78    444.75    473.22      0.81      0.08         0         1  28818.48
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073     10       78    444.75    473.22      0.81      0.08         0         1  28818.48
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+===================================================
+==== Summary Reporting for Corner ss_Cmax_m40c ====
+===================================================
+
+======================================================== Summary Table for Corner ss_Cmax_m40c =========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_m40c_func
+SYS_CLK                                 M,D      2073     10       78    444.75    473.22      0.97      0.07         0         0  28818.48
+### Mode: test, Scenario: ss_Cmax_m40c_test
+SYS_CLK                                 M,D      2073     10       78    444.75    473.22      0.97      0.07         0         0  28818.48
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073     10       78    444.75    473.22      0.97      0.07         0         0  28818.48
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

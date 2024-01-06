@@ -1,0 +1,33 @@
+****************************************
+Report : qor
+        -summary
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 13:41:57 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'bslice_post_cts.nlib:bslice.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 103856, routed nets = 84, across physical hierarchy nets = 0, parasitics cached nets = 103856, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Timer using 'CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+ss_Cmax_125c_func  (Setup)            -0.20          -5.50             60
+ss_Cmax_m40c_func  (Setup)            -0.35         -80.85            432
+ss_Cmax_m40c_test  (Setup)            -0.35         -80.85            432
+Design             (Setup)            -0.35         -83.59            465
+
+ss_Cmax_125c_func  (Hold)             -0.03          -0.31             11
+ss_Cmax_m40c_func  (Hold)              0.02           0.00              0
+ss_Cmax_m40c_test  (Hold)              0.02           0.00              0
+Design             (Hold)             -0.03          -0.31             11
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                         496706.77
+Cell Area (netlist and physical only):       499774.29
+Nets with DRC Violations:       42
+1

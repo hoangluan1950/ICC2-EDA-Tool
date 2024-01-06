@@ -1,0 +1,30 @@
+****************************************
+Report : qor
+        -summary
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Sat Jan  6 15:55:42 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+ss_Cmax_125c_func  (Setup)             0.00           0.00              0
+ss_Cmax_m40c_func  (Setup)             0.00           0.00              0
+ss_Cmax_m40c_test  (Setup)             0.00           0.00              0
+Design             (Setup)             0.00           0.00              0
+
+ss_Cmax_125c_func  (Hold)              0.09           0.00              0
+ss_Cmax_m40c_func  (Hold)              0.26           0.00              0
+ss_Cmax_m40c_test  (Hold)              0.26           0.00              0
+Design             (Hold)              0.09           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                         477507.21
+Cell Area (netlist and physical only):      1071193.69
+Nets with DRC Violations:       82
+1

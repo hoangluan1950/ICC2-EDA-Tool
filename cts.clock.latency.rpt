@@ -1,0 +1,143 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: The stitching and editing of coupling caps is turned OFF for design 'bslice_cts.nlib:bslice.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 103856, routed nets = 84, across physical hierarchy nets = 0, parasitics cached nets = 103856, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock qor
+        -type latency
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 13:18:12 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===================================================
+==== Latency Reporting for Corner ss_Cmax_125c ====
+===================================================
+
+================================================ Summary Table for Corner ss_Cmax_125c =================================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_125c_func
+SYS_CLK                                 M,D      2073      0.05      0.08        --      0.81      0.73      0.74      0.01        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073      0.05      0.08        --      0.81      0.73        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================= Details Table for Corner ss_Cmax_125c ========================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_125c_func
+SYS_CLK
+                                   L   oeb_reg/CLK                        0.81 f      0.81 r      0.40        0.40
+                                   L   bslice_pre/s1_op2_reg[3][43]/CLK
+                                                                          0.78 f      0.77 r      0.22        0.22
+                                   L   bslice_sram/ram_in_op1_r_reg[134]/CLK
+                                                                          0.78 r      0.78 r        --          --
+                                   L   bslice_sram/ram_in_op2_r_reg[4]/CLK
+                                                                          0.78 r      0.78 r        --          --
+                                   L   bslice_sram/ram_in_op1_r_reg[106]/CLK
+                                                                          0.78 r      0.78 r        --          --
+                                   S   bslice_post/s2_op1_reg[0][9]/CLK
+                                                                          0.73 r      0.73 r        --          --
+                                   S   bslice_post/s2_op1_reg[0][8]/CLK
+                                                                          0.73 r      0.73 r        --          --
+                                   S   bslice_post/s2_op1_reg[0][7]/CLK
+                                                                          0.73 r      0.73 r        --          --
+                                   S   bslice_post/s2_op1_reg[0][5]/CLK
+                                                                          0.73 r      0.73 r        --          --
+                                   S   bslice_post/s2_op1_reg[0][6]/CLK
+                                                                          0.73 r      0.73 r        --          --
+
+
+===================================================
+==== Latency Reporting for Corner ss_Cmax_m40c ====
+===================================================
+
+================================================ Summary Table for Corner ss_Cmax_m40c =================================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_m40c_func
+SYS_CLK                                 M,D      2073      0.05      0.07        --      0.97      0.89      0.95      0.01        --
+### Mode: test, Scenario: ss_Cmax_m40c_test
+SYS_CLK                                 M,D      2073      0.05      0.07        --      0.97      0.89      0.95      0.01        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073      0.05      0.07        --      0.97      0.89        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================= Details Table for Corner ss_Cmax_m40c ========================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_m40c_func
+SYS_CLK
+                                   L   bslice_pre/s1_op2_reg[3][43]/CLK
+                                                                          0.97 f      0.93 r      0.22        0.22
+                                   L   bslice_post/s2_op1_reg[1][25]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][23]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][22]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][21]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   S   bslice_pre/s1_op2_reg[0][39]/CLK
+                                                                          0.92 f      0.89 r      0.16        0.16
+                                   S   oeb_reg/CLK                        0.92 f      0.90 r      0.40        0.40
+                                   S   bslice_sram/ram_in_op1_r_reg[54]/CLK
+                                                                          0.92 r      0.92 r        --          --
+                                   S   bslice_sram/ram_in_op2_r_reg[30]/CLK
+                                                                          0.92 r      0.92 r        --          --
+                                   S   bslice_sram/ram_in_op2_r_reg[148]/CLK
+                                                                          0.92 r      0.92 r        --          --
+
+
+### Mode: test, Scenario: ss_Cmax_m40c_test
+SYS_CLK
+                                   L   bslice_pre/s1_op2_reg[3][43]/CLK
+                                                                          0.97 f      0.93 r      0.22        0.22
+                                   L   bslice_post/s2_op1_reg[1][25]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][23]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][22]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   L   bslice_post/s2_op1_reg[1][21]/CLK
+                                                                          0.96 r      0.96 r        --          --
+                                   S   bslice_pre/s1_op2_reg[0][39]/CLK
+                                                                          0.92 f      0.89 r      0.16        0.16
+                                   S   oeb_reg/CLK                        0.92 f      0.90 r      0.40        0.40
+                                   S   bslice_sram/ram_in_op1_r_reg[54]/CLK
+                                                                          0.92 r      0.92 r        --          --
+                                   S   bslice_sram/ram_in_op2_r_reg[30]/CLK
+                                                                          0.92 r      0.92 r        --          --
+                                   S   bslice_sram/ram_in_op2_r_reg[148]/CLK
+                                                                          0.92 r      0.92 r        --          --
+
+
+1

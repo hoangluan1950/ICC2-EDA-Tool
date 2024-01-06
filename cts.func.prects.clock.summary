@@ -1,0 +1,119 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: The stitching and editing of coupling caps is turned OFF for design 'bslice_cts.nlib:bslice.design'. (TIM-125)
+Information: The RC mode used is RDE for design 'bslice'. (NEX-022)
+Information: Design Average RC for design bslice  (NEX-011)
+Information: r = 1.149601 ohm/um, via_r = 0.507706 ohm/cut, c = 0.083153 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.432431 ohm/um, via_r = 0.613470 ohm/cut, c = 0.096783 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 103778, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 103778, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+ML Acceleration:                           off
+************************************************************
+Corner Scaling is off, multiplier is 1.000000
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (20000 20000) (17422480 6256560)
+Number of VARs = 1
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 3
+Number of used supplies = 0
+Blocked VAs: 
+INFO: auto-mv setup started.
+ORB: timingScenario ss_Cmax_125c_func timingCorner ss_Cmax_125c
+INFO: Using corner ss_Cmax_125c for worst leakage corner
+Using default layer M4
+nplLib: sample lib cell area 10.674047
+nplLib: sample lib cell leakage 0.00341553
+new cutoff lpd: 1.21956e-02
+nplLib: sample lib cell leakage 0.00341553
+maxCornerId = 2
+corner=ss_Cmax_125c, tran factor=1.0000 (0.2432 / 0.2432)
+corner=ss_Cmax_m40c, tran factor=0.9191 (0.2235 / 0.2432)
+maxCornerId = 2
+ORB: Nominal = 0.0524849  Design MT = inf  Target = 0.2431773 (4.633 nominal)  MaxRC = 0.168325
+Information: Initializing advanced legalizer cellmap without advanced rules enabled and without PDC enabled
+Information: The following app options are used in cellmap
+        place.legalize.enable_color_aware_placement : false
+        place.legalize.use_nll_query_cm : false
+        place.legalize.enable_advanced_legalizer : true
+        place.legalize.enable_prerouted_net_check : true
+        place.legalize.enable_advanced_prerouted_net_check : false
+        place.legalize.always_continue : true
+        place.legalize.limit_legality_checks : false
+        place.common.pnet_aware_density : 1.0000
+        place.common.pnet_aware_min_width : 0.0000
+        place.common.pnet_aware_layers : {}
+        place.common.use_placement_model : false
+        place.common.enable_advanced_placement_model : true
+        cts.placement.cell_spacing_rule_style : maximum
+Total 0.1125 seconds to build cellmap data
+INFO: creating 50(r) x 53(c) GridCells YDim 12.5753 XDim 32.9112
+INFO: number of GridCells (0xd10068c0): 2650
+INFO: creating 50(r) x 53(c) GridCells YDim 12.5753 XDim 32.9112
+INFO: number of GridCells (0xd10068c0): 2650
+Total 0.5257 seconds to load 95216 cell instances into cellmap
+Moveable cells: 95216; Application fixed cells: 0; Macro cells: 0; User fixed cells: 0
+Average cell width 2.1215, cell height 1.6930, cell area 3.6431 for total 95216 placed and application fixed cells
+****************************************
+Report : clock qor
+        -type summary
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 13:17:01 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===================================================
+==== Summary Reporting for Corner ss_Cmax_125c ====
+===================================================
+
+======================================================== Summary Table for Corner ss_Cmax_125c =========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_125c_func
+SYS_CLK                                 M,D      2073      4        0      0.00     27.45     13.01     10.75         4         4  18907.43
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073      4        0      0.00     27.45     13.01     10.75         4         4  18907.43
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+===================================================
+==== Summary Reporting for Corner ss_Cmax_m40c ====
+===================================================
+
+======================================================== Summary Table for Corner ss_Cmax_m40c =========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: ss_Cmax_m40c_func
+SYS_CLK                                 M,D      2073      4        0      0.00     27.45     17.21     14.34         4         4  18907.43
+### Mode: test, Scenario: ss_Cmax_m40c_test
+SYS_CLK                                 M,D      2073      4        0      0.00     27.45     17.21     14.34         4         4  18907.43
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2073      4        0      0.00     27.45     17.21     14.34         4         4  18907.43
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

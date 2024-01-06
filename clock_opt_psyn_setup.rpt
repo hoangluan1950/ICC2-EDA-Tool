@@ -1,0 +1,875 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+        -nosplit
+        -nets
+        -transition_time
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 13:59:20 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: bslice_pre/s1_op2_reg[1][7] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_post/s2_op2_reg[3][59] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                               Fanout   Trans      Incr      Path  
+  -----------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                               0.00      0.00
+  clock network delay (propagated)                                        0.97      0.97
+
+  bslice_pre/s1_op2_reg[1][7]/CLK (SDFFX2_LVT)                  0.13      0.00      0.97 r
+  bslice_pre/s1_op2_reg[1][7]/Q (SDFFX2_LVT)                    0.07      0.41      1.38 r
+  bslice_pre/op2_out[135] (net)                          1
+  bslice_post/ZBUF_2651_inst_181196/Y (NBUFFX32_LVT)            0.11      0.13      1.51 r
+  bslice_post/ZBUF_2651_182 (net)                       35
+  bslice_post/ctmi_116566/Y (XOR2X1_RVT)                        0.15      0.52      2.03 f
+  bslice_post/N487019 (net)                              2
+  bslice_post/ctmi_116565/Y (AO22X1_RVT)                        0.11      0.38      2.41 f
+  bslice_post/N480369 (net)                              1
+  bslice_post/A157225/CO (FADDX1_LVT)                           0.08      0.20      2.61 f
+  bslice_post/N480366 (net)                              1
+  bslice_post/A157243/CO (FADDX1_LVT)                           0.07      0.19      2.80 f
+  bslice_post/N480423 (net)                              1
+  bslice_post/A157261/CO (FADDX1_LVT)                           0.07      0.16      2.96 f
+  bslice_post/N480475 (net)                              1
+  bslice_post/A157279/S (FADDX1_LVT)                            0.07      0.26      3.22 r
+  bslice_post/N480528 (net)                              1
+  bslice_post/A157281/S (FADDX1_LVT)                            0.08      0.23      3.45 f
+  bslice_post/N480532 (net)                              1
+  bslice_post/A157282/S (FADDX1_LVT)                            0.06      0.26      3.71 r
+  bslice_post/N479337 (net)                              2
+  bslice_post/ctmi_114811/Y (NAND2X0_LVT)                       0.06      0.06      3.77 f
+  bslice_post/N479528 (net)                              2
+  bslice_post/ctmi_114810/Y (OA21X1_LVT)                        0.05      0.15      3.93 f
+  bslice_post/N479525 (net)                              1
+  bslice_post/ctmTdsLR_1_57710/Y (OA21X1_LVT)                   0.04      0.10      4.03 f
+  bslice_post/N479517 (net)                              1
+  bslice_post/ctmi_114798/Y (OA21X1_LVT)                        0.05      0.10      4.13 f
+  bslice_post/N479327 (net)                              2
+  bslice_post/ctmTdsLR_2_182492/Y (OA21X1_LVT)                  0.07      0.13      4.26 f
+  bslice_post/ups_net_502996 (net)                       1
+  bslice_post/ctmTdsLR_2_55259/Y (OR3X1_LVT)                    0.04      0.12      4.38 f
+  bslice_post/copt_net_19645 (net)                       1
+  bslice_post/ctmTdsLR_1_56576/Y (AND2X2_LVT)                   0.07      0.13      4.51 f
+  bslice_post/N479250 (net)                              7
+  bslice_post/ctmi_114633/Y (OA21X1_LVT)                        0.06      0.15      4.66 f
+  bslice_post/N479217 (net)                              2
+  bslice_post/HFSINV_245_1500/Y (INVX4_LVT)                     0.04      0.06      4.72 r
+  bslice_post/HFSNET_349 (net)                           1
+  bslice_post/ctmTdsLR_1_58270/Y (NAND3X0_LVT)                  0.06      0.05      4.77 f
+  bslice_post/popt_net_2134 (net)                        1
+  bslice_post/ctmTdsLR_1_13815/Y (AND2X1_LVT)                   0.05      0.11      4.88 f
+  bslice_post/N479211 (net)                              2
+  bslice_post/HFSBUF_1725_1458/Y (NBUFFX16_LVT)                 0.07      0.12      5.00 f
+  bslice_post/HFSNET_309 (net)                          39
+  bslice_post/ctmTdsLR_1_56071/Y (OA21X1_LVT)                   0.05      0.13      5.13 f
+  bslice_post/popt_net_19032 (net)                       1
+  bslice_post/ctmTdsLR_1_55970/Y (MUX21X2_LVT)                  0.06      0.16      5.29 f
+  bslice_post/N452 (net)                                 1
+  bslice_post/s2_op2_reg[3][59]/D (SDFFX1_RVT)                  0.06      0.00      5.29 f
+  data arrival time                                                                 5.29
+
+  clock SYS_CLK (rise edge)                                               5.10      5.10
+  clock network delay (propagated)                                        0.88      5.98
+  clock reconvergence pessimism                                           0.03      6.02
+  bslice_post/s2_op2_reg[3][59]/CLK (SDFFX1_RVT)                0.10      0.00      6.02 r
+  clock uncertainty                                                      -0.20      5.82
+  library setup time                                                     -0.58      5.24
+  data required time                                                                5.24
+  -----------------------------------------------------------------------------------------------
+  data required time                                                                5.24
+  data arrival time                                                                -5.29
+  -----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                 -0.05
+
+
+
+  Startpoint: bslice_pre/s1_op2_reg[1][7] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_post/s2_op2_reg[3][43] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                               Fanout   Trans      Incr      Path  
+  -----------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                               0.00      0.00
+  clock network delay (propagated)                                        0.97      0.97
+
+  bslice_pre/s1_op2_reg[1][7]/CLK (SDFFX2_LVT)                  0.13      0.00      0.97 r
+  bslice_pre/s1_op2_reg[1][7]/Q (SDFFX2_LVT)                    0.07      0.41      1.38 r
+  bslice_pre/op2_out[135] (net)                          1
+  bslice_post/ZBUF_2651_inst_181196/Y (NBUFFX32_LVT)            0.11      0.13      1.51 r
+  bslice_post/ZBUF_2651_182 (net)                       35
+  bslice_post/ctmi_116566/Y (XOR2X1_RVT)                        0.15      0.52      2.03 f
+  bslice_post/N487019 (net)                              2
+  bslice_post/ctmi_116565/Y (AO22X1_RVT)                        0.11      0.38      2.41 f
+  bslice_post/N480369 (net)                              1
+  bslice_post/A157225/CO (FADDX1_LVT)                           0.08      0.20      2.61 f
+  bslice_post/N480366 (net)                              1
+  bslice_post/A157243/CO (FADDX1_LVT)                           0.07      0.19      2.80 f
+  bslice_post/N480423 (net)                              1
+  bslice_post/A157261/CO (FADDX1_LVT)                           0.07      0.16      2.96 f
+  bslice_post/N480475 (net)                              1
+  bslice_post/A157279/S (FADDX1_LVT)                            0.07      0.26      3.22 r
+  bslice_post/N480528 (net)                              1
+  bslice_post/A157281/S (FADDX1_LVT)                            0.08      0.23      3.45 f
+  bslice_post/N480532 (net)                              1
+  bslice_post/A157282/S (FADDX1_LVT)                            0.06      0.26      3.71 r
+  bslice_post/N479337 (net)                              2
+  bslice_post/ctmi_114811/Y (NAND2X0_LVT)                       0.06      0.06      3.77 f
+  bslice_post/N479528 (net)                              2
+  bslice_post/ctmi_114810/Y (OA21X1_LVT)                        0.05      0.15      3.93 f
+  bslice_post/N479525 (net)                              1
+  bslice_post/ctmTdsLR_1_57710/Y (OA21X1_LVT)                   0.04      0.10      4.03 f
+  bslice_post/N479517 (net)                              1
+  bslice_post/ctmi_114798/Y (OA21X1_LVT)                        0.05      0.10      4.13 f
+  bslice_post/N479327 (net)                              2
+  bslice_post/ctmTdsLR_2_182492/Y (OA21X1_LVT)                  0.07      0.13      4.26 f
+  bslice_post/ups_net_502996 (net)                       1
+  bslice_post/ctmTdsLR_2_55259/Y (OR3X1_LVT)                    0.04      0.12      4.38 f
+  bslice_post/copt_net_19645 (net)                       1
+  bslice_post/ctmTdsLR_1_56576/Y (AND2X2_LVT)                   0.07      0.13      4.51 f
+  bslice_post/N479250 (net)                              7
+  bslice_post/ctmi_114633/Y (OA21X1_LVT)                        0.06      0.15      4.66 f
+  bslice_post/N479217 (net)                              2
+  bslice_post/HFSINV_245_1500/Y (INVX4_LVT)                     0.04      0.06      4.72 r
+  bslice_post/HFSNET_349 (net)                           1
+  bslice_post/ctmTdsLR_1_58270/Y (NAND3X0_LVT)                  0.06      0.05      4.77 f
+  bslice_post/popt_net_2134 (net)                        1
+  bslice_post/ctmTdsLR_1_13815/Y (AND2X1_LVT)                   0.05      0.11      4.88 f
+  bslice_post/N479211 (net)                              2
+  bslice_post/HFSBUF_1725_1458/Y (NBUFFX16_LVT)                 0.07      0.12      5.00 f
+  bslice_post/HFSNET_309 (net)                          39
+  bslice_post/ctmi_115276/Y (OAI21X2_LVT)                       0.04      0.21      5.21 r
+  bslice_post/N485967 (net)                              1
+  bslice_post/ctmi_115269/Y (MUX21X2_LVT)                       0.13      0.23      5.44 f
+  bslice_post/N468 (net)                                 1
+  bslice_post/s2_op2_reg[3][43]/D (SDFFX2_LVT)                  0.13      0.00      5.44 f
+  data arrival time                                                                 5.44
+
+  clock SYS_CLK (rise edge)                                               5.10      5.10
+  clock network delay (propagated)                                        0.87      5.97
+  clock reconvergence pessimism                                           0.03      6.01
+  bslice_post/s2_op2_reg[3][43]/CLK (SDFFX2_LVT)                0.09      0.00      6.01 r
+  clock uncertainty                                                      -0.20      5.81
+  library setup time                                                     -0.38      5.43
+  data required time                                                                5.43
+  -----------------------------------------------------------------------------------------------
+  data required time                                                                5.43
+  data arrival time                                                                -5.44
+  -----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                 -0.01
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op2_reg[3][46] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                               Fanout   Trans      Incr      Path  
+  -----------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                               0.00      0.00
+  clock network delay (propagated)                                        0.53      0.53
+
+  oeb_reg/CLK (SDFFASX1_LVT)                                    0.05      0.00      0.53 r
+  oeb_reg/Q (SDFFASX1_LVT)                                      0.10      0.39      0.92 r
+  oeb (net)                                              1
+  gre_d_BUF_675_inst_74251/Y (NBUFFX32_LVT)                     0.08      0.14      1.07 r
+  gre_BUF_675_56 (net)                                  16
+  bslice_sram/sram[6]_ram/O[6] (SRAMLP1RW64x32)                 0.13      0.26      1.32 f
+  rop2[166] (net)                                        1
+  guide_buffer_188/Y (NBUFFX16_LVT)                             0.09      0.18      1.50 f
+  guide_net_188 (net)                                    3
+  bslice_pre/ZINV_3587_inst_9618/Y (INVX8_LVT)                  0.07      0.11      1.61 r
+  bslice_pre/ZINV_3587_287 (net)                         2
+  bslice_pre/ZINV_3389_inst_9617/Y (INVX32_LVT)                 0.06      0.04      1.65 f
+  bslice_pre/ZINV_3389_287 (net)                        31
+  bslice_pre/mult_51/ctmi_125564/Y (XOR2X1_RVT)                 0.16      0.46      2.10 f
+  bslice_pre/mult_51/ctmn_433132 (net)                   2
+  bslice_pre/mult_51/ctmi_125625/Y (AO22X1_RVT)                 0.10      0.27      2.37 f
+  bslice_pre/mult_51/tmp_net180518 (net)                 1
+  bslice_pre/mult_51/U_5415/S (FADDX1_LVT)                      0.14      0.32      2.69 r
+  bslice_pre/mult_51/tmp_net185089 (net)                 1
+  bslice_pre/mult_51/U_5427/S (FADDX1_LVT)                      0.09      0.29      2.97 f
+  bslice_pre/mult_51/tmp_net185113 (net)                 1
+  bslice_pre/mult_51/U_5433/CO (FADDX1_LVT)                     0.07      0.17      3.14 f
+  bslice_pre/mult_51/tmp_net185126 (net)                 1
+  bslice_pre/mult_51/U_5466/S (FADDX1_LVT)                      0.08      0.26      3.40 r
+  bslice_pre/mult_51/tmp_net185191 (net)                 3
+  bslice_pre/ctmTdsLR_1_230434/Y (AO222X1_LVT)                  0.12      0.20      3.60 r
+  bslice_pre/ups_net_501642 (net)                        3
+  bslice_pre/ctmTdsLR_1_231337/Y (MUX41X1_LVT)                  0.12      0.27      3.87 f
+  bslice_pre/mult_51/tmp_net185262 (net)                 1
+  bslice_pre/mult_51/U_5504/S (FADDX1_LVT)                      0.06      0.30      4.17 r
+  bslice_pre/mult_51/tmp_net185266 (net)                 2
+  bslice_pre/mult_51/ctmi_122534/Y (NOR2X2_LVT)                 0.05      0.14      4.30 f
+  bslice_pre/mult_51/ctmn_431250 (net)                   3
+  bslice_pre/mult_51/ctmi_122533/Y (OR2X1_LVT)                  0.04      0.11      4.42 f
+  bslice_pre/mult_51/ctmn_431252 (net)                   2
+  bslice_pre/ctmTdsLR_2_212141/Y (OR2X1_LVT)                    0.04      0.09      4.51 f
+  bslice_pre/mult_51/ctmn_431253 (net)                   2
+  bslice_pre/ctmTdsLR_1_231629/Y (OR3X1_LVT)                    0.05      0.11      4.62 f
+  bslice_pre/mult_51/ctmn_431529 (net)                   2
+  bslice_pre/ctmTdsLR_3_23584/Y (INVX0_RVT)                     0.06      0.07      4.69 r
+  bslice_pre/popt_net_7045 (net)                         1
+  bslice_pre/ctmTdsLR_1_51913/Y (NAND3X0_LVT)                   0.06      0.07      4.76 f
+  bslice_pre/popt_net_9687 (net)                         1
+  bslice_pre/ctmTdsLR_1_29331/Y (NAND2X4_LVT)                   0.07      0.17      4.93 r
+  bslice_pre/mult_51/ctmn_431531 (net)                  12
+  bslice_pre/ctmTdsLR_1_178469/Y (AOI21X2_LVT)                  0.05      0.15      5.09 f
+  bslice_pre/mult_51/ctmn_431552 (net)                   2
+  bslice_pre/gre_d_INV_998_inst_74032/Y (INVX8_LVT)             0.04      0.05      5.14 r
+  bslice_pre/gre_d_INV_998_26 (net)                     13
+  bslice_pre/ctmTdsLR_1_30148/Y (XNOR2X2_LVT)                   0.05      0.12      5.26 f
+  bslice_pre/N466 (net)                                  1
+  bslice_pre/s1_op2_reg[3][46]/D (SDFFX2_LVT)                   0.05      0.00      5.26 f
+  data arrival time                                                                 5.26
+
+  clock SYS_CLK (rise edge)                                               5.10      5.10
+  clock network delay (propagated)                                        0.68      5.78
+  clock reconvergence pessimism                                           0.03      5.81
+  bslice_pre/s1_op2_reg[3][46]/CLK (SDFFX2_LVT)                 0.05      0.00      5.81 r
+  clock uncertainty                                                      -0.20      5.61
+  library setup time                                                     -0.36      5.25
+  data required time                                                                5.25
+  -----------------------------------------------------------------------------------------------
+  data required time                                                                5.25
+  data arrival time                                                                -5.26
+  -----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                 -0.00
+
+
+
+  Startpoint: bslice_pre/s1_op2_reg[2][9] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_post/s2_op2_reg[1][53] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                               Fanout   Trans      Incr      Path  
+  -----------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                               0.00      0.00
+  clock network delay (propagated)                                        0.97      0.97
+
+  bslice_pre/s1_op2_reg[2][9]/CLK (SDFFX2_LVT)                  0.10      0.00      0.97 r
+  bslice_pre/s1_op2_reg[2][9]/Q (SDFFX2_LVT)                    0.08      0.41      1.38 r
+  bslice_pre/p_aps47 (net)                               2
+  bslice_post/HFSBUF_669_3697/Y (NBUFFX16_LVT)                  0.07      0.13      1.50 r
+  bslice_post/HFSNET_3533 (net)                          3
+  bslice_post/HFSBUF_371_3694/Y (NBUFFX16_LVT)                  0.09      0.13      1.63 r
+  bslice_post/HFSNET_3530 (net)                         26
+  bslice_post/ctmi_110203/Y (XOR2X2_LVT)                        0.08      0.21      1.84 f
+  bslice_post/N477010 (net)                              3
+  bslice_post/HFSINV_1376_3225/Y (INVX4_LVT)                    0.07      0.08      1.93 r
+  bslice_post/HFSNET_3133 (net)                          2
+  bslice_post/ctmTdsLR_1_40304/Y (AND2X1_LVT)                   0.06      0.09      2.02 r
+  bslice_post/N477024 (net)                              1
+  bslice_post/HFSBUF_153_2661/Y (NBUFFX16_LVT)                  0.10      0.13      2.14 r
+  bslice_post/HFSNET_2674 (net)                         32
+  bslice_post/ctmi_111529/Y (AO22X1_RVT)                        0.13      0.25      2.40 r
+  bslice_post/N471703 (net)                              1
+  bslice_post/A155552/S (FADDX1_LVT)                            0.09      0.29      2.68 f
+  bslice_post/N471702 (net)                              1
+  bslice_post/A155562/S (FADDX1_LVT)                            0.08      0.23      2.92 f
+  bslice_post/N471743 (net)                              1
+  bslice_post/A155567/CO (FADDX1_LVT)                           0.07      0.17      3.08 f
+  bslice_post/N471752 (net)                              1
+  bslice_post/A155593/S (FADDX1_LVT)                            0.06      0.27      3.35 r
+  bslice_post/N471829 (net)                              1
+  bslice_post/A155595/CO (FADDX1_LVT)                           0.07      0.14      3.49 r
+  bslice_post/N471832 (net)                              1
+  bslice_post/A155621/S (FADDX1_LVT)                            0.07      0.22      3.71 f
+  bslice_post/N471910 (net)                              1
+  bslice_post/A155622/S (FADDX1_LVT)                            0.06      0.25      3.97 r
+  bslice_post/N469624 (net)                              2
+  bslice_post/ctmi_108840/Y (NOR2X0_LVT)                        0.04      0.11      4.08 f
+  bslice_post/N469620 (net)                              3
+  bslice_post/ctmi_109033/Y (OA21X1_LVT)                        0.05      0.12      4.20 f
+  bslice_post/N469899 (net)                              2
+  bslice_post/ctmi_109032/Y (OA21X1_LVT)                        0.04      0.12      4.32 f
+  bslice_post/N469892 (net)                              1
+  bslice_post/ctmi_109024/Y (OA21X1_LVT)                        0.07      0.13      4.45 f
+  bslice_post/N469889 (net)                              2
+  bslice_post/ctmTdsLR_1_55591/Y (OA21X1_LVT)                   0.05      0.14      4.59 f
+  bslice_post/N469570 (net)                              2
+  bslice_post/ctmTdsLR_1_55942/Y (INVX2_LVT)                    0.04      0.05      4.64 r
+  bslice_post/popt_net_16765 (net)                       1
+  bslice_post/ctmTdsLR_2_51998/Y (AO21X1_LVT)                   0.05      0.07      4.71 r
+  bslice_post/popt_net_19128 (net)                       1
+  bslice_post/ctmTdsLR_1_57402/Y (NAND3X0_LVT)                  0.07      0.06      4.76 f
+  bslice_post/popt_net_1496 (net)                        1
+  bslice_post/ctmTdsLR_1_12670/Y (NAND2X4_LVT)                  0.07      0.17      4.93 r
+  bslice_post/N469530 (net)                              2
+  bslice_post/HFSINV_2573_1474/Y (INVX16_LVT)                   0.05      0.04      4.97 f
+  bslice_post/HFSNET_326 (net)                          27
+  bslice_post/ctmTdsLR_1_26283/Y (OR2X1_LVT)                    0.04      0.10      5.07 f
+  bslice_post/popt_net_8184 (net)                        2
+  bslice_post/ctmTdsLR_2_55777/Y (AO22X1_LVT)                   0.04      0.08      5.15 f
+  bslice_post/copt_net_19841 (net)                       1
+  bslice_post/ctmTdsLR_1_55776/Y (AO21X1_LVT)                   0.04      0.08      5.23 f
+  bslice_post/N330 (net)                                 1
+  bslice_post/s2_op2_reg[1][53]/D (SDFFX1_RVT)                  0.04      0.00      5.23 f
+  data arrival time                                                                 5.23
+
+  clock SYS_CLK (rise edge)                                               5.10      5.10
+  clock network delay (propagated)                                        0.87      5.97
+  clock reconvergence pessimism                                           0.03      6.00
+  bslice_post/s2_op2_reg[1][53]/CLK (SDFFX1_RVT)                0.09      0.00      6.00 r
+  clock uncertainty                                                      -0.20      5.80
+  library setup time                                                     -0.57      5.23
+  data required time                                                                5.23
+  -----------------------------------------------------------------------------------------------
+  data required time                                                                5.23
+  data arrival time                                                                -5.23
+  -----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                 -0.00
+
+
+
+  Startpoint: bslice_pre/s1_op2_reg[0][59] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_post/s2_op2_reg[3][57] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.97      0.97
+
+  bslice_pre/s1_op2_reg[0][59]/CLK (SDFFX2_LVT)                     0.13      0.00      0.97 r
+  bslice_pre/s1_op2_reg[0][59]/Q (SDFFX2_LVT)                       0.13      0.45      1.43 r
+  bslice_pre/op2_out[251] (net)                              1
+  bslice_post/ctmTdsLR_1_54716/Y (INVX16_LVT)                       0.10      0.07      1.49 f
+  bslice_post/ZINV_37_174 (net)                              2
+  bslice_post/HFSINV_349_3380/Y (INVX32_LVT)                        0.08      0.11      1.60 r
+  bslice_post/HFSNET_3274 (net)                             44
+  bslice_post/ctmTdsLR_1_58821/Y (MUX21X2_LVT)                      0.07      0.19      1.80 f
+  bslice_post/N487834 (net)                                  2
+  bslice_post/HFSBUF_342_2965/Y (NBUFFX2_LVT)                       0.04      0.10      1.89 f
+  bslice_post/HFSNET_2923 (net)                              2
+  bslice_post/ctmi_118116/Y (NOR2X0_LVT)                            0.07      0.15      2.04 r
+  bslice_post/N487901 (net)                                  2
+  bslice_post/gre_a_BUF_11824_inst_74534/Y (NBUFFX8_LVT)            0.11      0.13      2.18 r
+  bslice_post/gre_a_BUF_11824_74 (net)                      29
+  bslice_post/ctmi_119224/Y (AO22X1_RVT)                            0.15      0.26      2.44 r
+  bslice_post/N484003 (net)                                  1
+  bslice_post/A158433/S (FADDX1_LVT)                                0.08      0.24      2.68 f
+  bslice_post/N484000 (net)                                  1
+  bslice_post/A158439/CO (FADDX1_LVT)                               0.08      0.18      2.86 f
+  bslice_post/N484015 (net)                                  1
+  bslice_post/A158466/S (FADDX1_LVT)                                0.06      0.28      3.14 r
+  bslice_post/N484096 (net)                                  1
+  bslice_post/A158469/S (FADDX1_LVT)                                0.07      0.22      3.35 f
+  bslice_post/N484102 (net)                                  1
+  bslice_post/A158471/CO (FADDX1_LVT)                               0.07      0.17      3.52 f
+  bslice_post/N484105 (net)                                  1
+  bslice_post/A158495/S (FADDX1_LVT)                                0.07      0.26      3.78 r
+  bslice_post/N484178 (net)                                  2
+  bslice_post/ctmTdsLR_1_54662/Y (XOR3X2_LVT)                       0.08      0.24      4.02 r
+  bslice_post/N484180 (net)                                  2
+  bslice_post/ctmi_114953/Y (NOR2X2_LVT)                            0.05      0.14      4.16 f
+  bslice_post/N486617 (net)                                  2
+  bslice_post/ctmTdsLR_1_56015/Y (OR2X1_LVT)                        0.04      0.11      4.27 f
+  bslice_post/N492562 (net)                                  2
+  bslice_post/ctmTdsLR_1_56350/Y (OR2X1_LVT)                        0.04      0.09      4.37 f
+  bslice_post/N486608 (net)                                  3
+  bslice_post/ctmTdsLR_3_56352/Y (OR2X1_LVT)                        0.04      0.11      4.48 f
+  bslice_post/N492560 (net)                                  3
+  bslice_post/ctmTdsLR_1_55326/Y (OR2X1_LVT)                        0.03      0.09      4.57 f
+  bslice_post/copt_net_19450 (net)                           1
+  bslice_post/ctmTdsLR_2_56438/Y (AO21X1_LVT)                       0.04      0.12      4.68 f
+  bslice_post/copt_net_20143 (net)                           1
+  bslice_post/ctmTdsLR_1_56437/Y (AND2X4_LVT)                       0.10      0.16      4.84 f
+  bslice_post/HFSNET_318 (net)                              20
+  bslice_post/ctmi_115149/Y (OA21X1_LVT)                            0.08      0.17      5.02 f
+  bslice_post/N486504 (net)                                  6
+  bslice_post/ctmTdsLR_9_24605/Y (INVX1_LVT)                        0.05      0.07      5.08 r
+  bslice_post/popt_net_7523 (net)                            1
+  bslice_post/ctmTdsLR_6_24602/Y (MUX21X1_LVT)                      0.06      0.11      5.20 r
+  bslice_post/popt_net_7524 (net)                            1
+  bslice_post/ctmTdsLR_1_54798/Y (NAND2X0_LVT)                      0.05      0.05      5.25 f
+  bslice_post/N454 (net)                                     1
+  bslice_post/s2_op2_reg[3][57]/D (SDFFX1_RVT)                      0.05      0.00      5.25 f
+  data arrival time                                                                     5.25
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.88      5.98
+  clock reconvergence pessimism                                               0.03      6.02
+  bslice_post/s2_op2_reg[3][57]/CLK (SDFFX1_RVT)                    0.10      0.00      6.02 r
+  clock uncertainty                                                          -0.20      5.82
+  library setup time                                                         -0.57      5.25
+  data required time                                                                    5.25
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.25
+  data arrival time                                                                    -5.25
+  ---------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -0.00
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op1_reg[3][37] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.53      0.53
+
+  oeb_reg/CLK (SDFFASX1_LVT)                                        0.05      0.00      0.53 r
+  oeb_reg/Q (SDFFASX1_LVT)                                          0.10      0.39      0.92 r
+  oeb (net)                                                  1
+  gre_d_BUF_675_inst_74251/Y (NBUFFX32_LVT)                         0.08      0.14      1.07 r
+  gre_BUF_675_56 (net)                                      16
+  bslice_sram/sram[15]_ram/O[29] (SRAMLP1RW64x32)                   0.10      0.17      1.23 r
+  rop1[221] (net)                                            1
+  guide_buffer_469/Y (NBUFFX2_LVT)                                  0.11      0.13      1.37 r
+  guide_net_469 (net)                                        1
+  bslice_pre/ZINV_272_inst_9008/Y (INVX16_LVT)                      0.07      0.06      1.42 f
+  bslice_pre/ZINV_272_269 (net)                              3
+  bslice_pre/HFSINV_265_5220/Y (INVX16_LVT)                         0.07      0.08      1.50 r
+  bslice_pre/HFSNET_1728 (net)                              26
+  bslice_pre/mult_49/ctmi_135849/Y (XOR2X1_RVT)                     0.15      0.48      1.99 f
+  bslice_pre/mult_49/ctmn_439076 (net)                       2
+  bslice_pre/ctmTdsLR_1_35633/Y (AO22X1_LVT)                        0.05      0.23      2.21 f
+  bslice_pre/mult_49/tmp_net131274 (net)                     3
+  bslice_pre/ctmTdsLR_2_65270/Y (XNOR2X1_LVT)                       0.06      0.16      2.37 r
+  bslice_pre/tmp_net23393 (net)                              1
+  bslice_pre/ctmTdsLR_1_65269/Y (XNOR2X1_LVT)                       0.07      0.17      2.54 r
+  bslice_pre/ups_net_513716 (net)                            2
+  bslice_pre/ctmTdsLR_11_207588/Y (INVX0_RVT)                       0.07      0.08      2.63 f
+  bslice_pre/ups_net_513717 (net)                            2
+  bslice_pre/ctmTdsLR_7_207584/Y (OAI22X1_LVT)                      0.09      0.21      2.84 r
+  bslice_pre/mult_49/tmp_net134858 (net)                     3
+  bslice_pre/ctmTdsLR_1_61169/Y (AO222X1_LVT)                       0.09      0.19      3.03 r
+  bslice_pre/mult_49/tmp_net134912 (net)                     3
+  bslice_pre/ctmTdsLR_2_67430/Y (XNOR2X1_LVT)                       0.06      0.18      3.21 r
+  bslice_pre/tmp_net24647 (net)                              1
+  bslice_pre/ctmTdsLR_1_67429/Y (XNOR2X1_LVT)                       0.11      0.20      3.42 r
+  bslice_pre/mult_49/tmp_net134965 (net)                     5
+  bslice_pre/ctmTdsLR_1_213429/Y (XOR3X2_LVT)                       0.08      0.28      3.70 r
+  bslice_pre/ups_net_499326 (net)                            5
+  bslice_pre/ctmTdsLR_2_230719/Y (INVX0_RVT)                        0.05      0.06      3.76 f
+  bslice_pre/ups_net_520685 (net)                            1
+  bslice_pre/ctmTdsLR_1_230718/Y (NAND2X0_RVT)                      0.13      0.11      3.87 r
+  bslice_pre/ups_net_499329 (net)                            1
+  bslice_pre/ctmTdsLR_8_175023/Y (AO21X1_LVT)                       0.06      0.14      4.01 r
+  bslice_pre/mult_49/tmp_net134976 (net)                     2
+  bslice_pre/ctmTdsLR_2_178335/Y (INVX0_RVT)                        0.04      0.06      4.07 f
+  bslice_pre/ups_net_501405 (net)                            1
+  bslice_pre/ctmTdsLR_1_178334/Y (OR2X1_LVT)                        0.04      0.11      4.18 f
+  bslice_pre/mult_49/ctmn_437856 (net)                       3
+  bslice_pre/ctmTdsLR_4_218022/Y (OA21X1_LVT)                       0.04      0.13      4.31 f
+  bslice_pre/ups_net_516793 (net)                            1
+  bslice_pre/ctmTdsLR_2_218020/Y (OA21X1_LVT)                       0.05      0.10      4.41 f
+  bslice_pre/mult_49/ctmn_437859 (net)                       2
+  bslice_pre/ctmTdsLR_2_220383/Y (OA21X1_LVT)                       0.05      0.10      4.51 f
+  bslice_pre/ups_net_517565 (net)                            1
+  bslice_pre/ctmTdsLR_1_51701/Y (OA21X1_LVT)                        0.05      0.11      4.62 f
+  bslice_pre/ups_net_499193 (net)                            2
+  bslice_pre/ctmTdsLR_2_11288/Y (OA21X1_LVT)                        0.04      0.12      4.74 f
+  bslice_pre/popt_net_707 (net)                              1
+  bslice_pre/ctmTdsLR_1_11287/Y (OR2X2_LVT)                         0.05      0.11      4.85 f
+  bslice_pre/ups_net_504909_CDR1 (net)                       1
+  bslice_pre/ctmTdsLR_1_51758/Y (OR2X1_LVT)                         0.03      0.09      4.94 f
+  bslice_pre/popt_net_18989 (net)                            1
+  bslice_pre/ctmTdsLR_1_51716/Y (AND2X2_LVT)                        0.06      0.11      5.05 f
+  bslice_pre/mult_49/HFSNET_30 (net)                         2
+  bslice_pre/HFSINV_1723_1446/Y (INVX8_LVT)                         0.08      0.08      5.13 r
+  bslice_pre/HFSNET_117 (net)                               27
+  bslice_pre/ctmTdsLR_1_209024/Y (AO21X1_LVT)                       0.07      0.13      5.27 r
+  bslice_pre/mult_49/ctmn_437982 (net)                       3
+  bslice_pre/ctmTdsLR_2_25429/Y (INVX0_LVT)                         0.05      0.05      5.31 f
+  bslice_pre/popt_net_7912 (net)                             1
+  bslice_pre/ctmTdsLR_2_70849/Y (NAND2X0_LVT)                       0.07      0.07      5.39 r
+  bslice_pre/tmp_net26676 (net)                              1
+  bslice_pre/ctmTdsLR_1_70848/Y (NAND2X0_LVT)                       0.06      0.05      5.44 f
+  bslice_pre/N218 (net)                                      1
+  bslice_pre/s1_op1_reg[3][37]/D (SDFFX2_LVT)                       0.06      0.00      5.44 f
+  data arrival time                                                                     5.44
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.84      5.94
+  clock reconvergence pessimism                                               0.04      5.99
+  bslice_pre/s1_op1_reg[3][37]/CLK (SDFFX2_LVT)                     0.08      0.00      5.99 r
+  clock uncertainty                                                          -0.20      5.79
+  library setup time                                                         -0.35      5.44
+  data required time                                                                    5.44
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.44
+  data arrival time                                                                    -5.44
+  ---------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -0.00
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op1_reg[1][62] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.53      0.53
+
+  oeb_reg/CLK (SDFFASX1_LVT)                                        0.05      0.00      0.53 r
+  oeb_reg/Q (SDFFASX1_LVT)                                          0.10      0.39      0.92 r
+  oeb (net)                                                  1
+  gre_d_BUF_675_inst_74251/Y (NBUFFX32_LVT)                         0.08      0.14      1.07 r
+  gre_BUF_675_56 (net)                                      16
+  bslice_sram/sram[10]_ram/O[28] (SRAMLP1RW64x32)                   0.15      0.27      1.33 f
+  rop1[60] (net)                                             1
+  guide_buffer_308/Y (NBUFFX32_LVT)                                 0.09      0.20      1.53 f
+  guide_net_308 (net)                                       35
+  bslice_pre/mult_48/ctmi_144319/Y (XOR2X1_RVT)                     0.16      0.48      2.01 f
+  bslice_pre/mult_48/ctmn_443686 (net)                       2
+  bslice_pre/ctmTdsLR_3_32038/Y (AOI22X1_RVT)                       0.08      0.42      2.43 r
+  bslice_pre/popt_net_11236 (net)                            2
+  bslice_pre/ctmTdsLR_2_32037/Y (INVX0_RVT)                         0.09      0.10      2.53 f
+  bslice_pre/popt_net_11237 (net)                            3
+  bslice_pre/ctmTdsLR_1_32036/Y (AO22X1_LVT)                        0.06      0.18      2.70 f
+  bslice_pre/mult_48/tmp_net112927 (net)                     3
+  bslice_pre/ctmTdsLR_2_68946/Y (XOR2X1_LVT)                        0.06      0.17      2.87 r
+  bslice_pre/tmp_net25556 (net)                              2
+  bslice_pre/ctmTdsLR_3_68947/Y (NAND2X0_RVT)                       0.09      0.09      2.96 f
+  bslice_pre/tmp_net25557 (net)                              1
+  bslice_pre/ctmTdsLR_1_68945/Y (OA21X1_LVT)                        0.07      0.16      3.12 f
+  bslice_pre/mult_48/tmp_net112944 (net)                     3
+  bslice_pre/ctmTdsLR_1_45577/Y (AO222X1_LVT)                       0.07      0.23      3.35 f
+  bslice_pre/popt_net_14832 (net)                            3
+  bslice_pre/ctmTdsLR_1_45721/Y (AO222X1_RVT)                       0.12      0.45      3.80 f
+  bslice_pre/mult_48/tmp_net112964 (net)                     2
+  bslice_pre/mult_48/ctmi_138935/Y (OR2X1_RVT)                      0.08      0.23      4.03 f
+  bslice_pre/mult_48/ctmn_440578 (net)                       3
+  bslice_pre/mult_48/ctmi_138933/Y (AND2X1_RVT)                     0.08      0.20      4.23 f
+  bslice_pre/mult_48/ctmn_440579 (net)                       2
+  bslice_pre/mult_48/ctmi_138932/Y (AND2X1_RVT)                     0.08      0.18      4.41 f
+  bslice_pre/mult_48/ctmn_440583 (net)                       2
+  bslice_pre/ctmTdsLR_2_69959/Y (NAND2X0_LVT)                       0.08      0.10      4.51 r
+  bslice_pre/tmp_net26154 (net)                              1
+  bslice_pre/ctmTdsLR_1_69958/Y (INVX1_LVT)                         0.07      0.07      4.58 f
+  bslice_pre/mult_48/ctmn_440584 (net)                       4
+  bslice_pre/ctmTdsLR_2_70082/Y (NAND3X0_LVT)                       0.07      0.08      4.66 r
+  bslice_pre/tmp_net26219 (net)                              1
+  bslice_pre/ctmTdsLR_1_70081/Y (INVX0_LVT)                         0.05      0.05      4.71 f
+  bslice_pre/mult_48/ctmn_440586 (net)                       3
+  bslice_pre/ctmTdsLR_2_70105/Y (NAND2X0_LVT)                       0.08      0.08      4.79 r
+  bslice_pre/tmp_net26233 (net)                              1
+  bslice_pre/ctmTdsLR_1_70104/Y (INVX0_LVT)                         0.06      0.06      4.84 f
+  bslice_pre/mult_48/ctmn_440587 (net)                       3
+  bslice_pre/ctmTdsLR_2_70168/Y (NAND2X0_LVT)                       0.08      0.08      4.92 r
+  bslice_pre/tmp_net26269 (net)                              1
+  bslice_pre/ctmTdsLR_1_70167/Y (INVX0_LVT)                         0.06      0.06      4.98 f
+  bslice_pre/mult_48/ctmn_440588 (net)                       4
+  bslice_pre/ctmTdsLR_2_70282/Y (NAND2X0_LVT)                       0.08      0.08      5.06 r
+  bslice_pre/tmp_net26336 (net)                              1
+  bslice_pre/ctmTdsLR_1_70281/Y (INVX1_LVT)                         0.06      0.06      5.13 f
+  bslice_pre/mult_48/net_net_494326 (net)                    6
+  bslice_pre/ctmTdsLR_2_214125/Y (NAND2X0_RVT)                      0.13      0.12      5.25 r
+  bslice_pre/ups_net_515600 (net)                            1
+  bslice_pre/ctmTdsLR_1_63161/Y (NAND4X0_RVT)                       0.17      0.20      5.45 f
+  bslice_pre/popt_net_16039 (net)                            1
+  bslice_pre/ctmTdsLR_1_63953/Y (NAND3X0_LVT)                       0.10      0.14      5.59 r
+  bslice_pre/HFSNET_35 (net)                                 1
+  bslice_pre/s1_op1_reg[1][62]/D (SDFFX1_LVT)                       0.10      0.00      5.59 r
+  data arrival time                                                                     5.59
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.85      5.95
+  clock reconvergence pessimism                                               0.04      5.99
+  bslice_pre/s1_op1_reg[1][62]/CLK (SDFFX1_LVT)                     0.08      0.00      5.99 r
+  clock uncertainty                                                          -0.20      5.79
+  library setup time                                                         -0.20      5.59
+  data required time                                                                    5.59
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.59
+  data arrival time                                                                    -5.59
+  ---------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -0.00
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op2_reg[3][43] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.53      0.53
+
+  oeb_reg/CLK (SDFFASX1_LVT)                                        0.05      0.00      0.53 r
+  oeb_reg/Q (SDFFASX1_LVT)                                          0.10      0.39      0.92 r
+  oeb (net)                                                  1
+  gre_d_BUF_675_inst_74251/Y (NBUFFX32_LVT)                         0.08      0.14      1.07 r
+  gre_BUF_675_56 (net)                                      16
+  bslice_sram/sram[6]_ram/O[6] (SRAMLP1RW64x32)                     0.13      0.26      1.32 f
+  rop2[166] (net)                                            1
+  guide_buffer_188/Y (NBUFFX16_LVT)                                 0.09      0.18      1.50 f
+  guide_net_188 (net)                                        3
+  bslice_pre/ZINV_3587_inst_9618/Y (INVX8_LVT)                      0.07      0.11      1.61 r
+  bslice_pre/ZINV_3587_287 (net)                             2
+  bslice_pre/ZINV_3389_inst_9617/Y (INVX32_LVT)                     0.06      0.04      1.65 f
+  bslice_pre/ZINV_3389_287 (net)                            31
+  bslice_pre/mult_51/ctmi_126308/Y (XOR2X1_RVT)                     0.15      0.46      2.11 f
+  bslice_pre/mult_51/ctmn_433495 (net)                       2
+  bslice_pre/ctmTdsLR_1_59974/Y (AO21X1_LVT)                        0.06      0.23      2.34 f
+  bslice_pre/mult_51/tmp_net181322 (net)                     3
+  bslice_pre/mult_51/U_5778/S (FADDX1_LVT)                          0.10      0.25      2.59 f
+  bslice_pre/mult_51/tmp_net185809 (net)                     4
+  bslice_pre/ctmTdsLR_5_194225/Y (OR2X1_LVT)                        0.04      0.14      2.73 f
+  bslice_pre/ups_net_508448 (net)                            2
+  bslice_pre/ctmTdsLR_2_67567/Y (NAND2X0_RVT)                       0.14      0.10      2.84 r
+  bslice_pre/tmp_net24729 (net)                              1
+  bslice_pre/ctmTdsLR_1_67566/Y (INVX0_RVT)                         0.09      0.11      2.95 f
+  bslice_pre/tmp_net21844 (net)                              2
+  bslice_pre/ctmTdsLR_3_61369/Y (AO222X1_LVT)                       0.05      0.12      3.07 f
+  bslice_pre/tmp_net21845 (net)                              1
+  bslice_pre/ctmTdsLR_1_61367/Y (AO221X1_LVT)                       0.07      0.13      3.20 f
+  bslice_pre/mult_51/tmp_net185887 (net)                     3
+  bslice_pre/ctmTdsLR_1_68396/Y (AO22X1_LVT)                        0.05      0.17      3.37 f
+  bslice_pre/mult_51/tmp_net185945 (net)                     1
+  bslice_pre/mult_51/U_5875/S (FADDX1_LVT)                          0.07      0.27      3.63 r
+  bslice_pre/mult_51/tmp_net186001 (net)                     3
+  bslice_pre/ctmTdsLR_7_176220/Y (XOR3X2_LVT)                       0.09      0.24      3.88 f
+  bslice_pre/mult_51/tmp_net186005 (net)                     1
+  bslice_pre/mult_51/U_5878/S (FADDX1_LVT)                          0.06      0.20      4.08 f
+  bslice_pre/mult_51/tmp_net186007 (net)                     1
+  bslice_pre/HFSBUF_47_1544/Y (NBUFFX2_LVT)                         0.06      0.11      4.19 f
+  bslice_pre/HFSNET_149 (net)                                3
+  bslice_pre/ctmTdsLR_1_34402/Y (OR2X1_LVT)                         0.04      0.10      4.29 f
+  bslice_pre/mult_51/ctmn_431072 (net)                       2
+  bslice_pre/ctmTdsLR_1_17853/Y (AND2X1_LVT)                        0.05      0.10      4.39 f
+  bslice_pre/mult_51/ctmn_431073 (net)                       3
+  bslice_pre/ctmTdsLR_1_174599/Y (AO21X1_LVT)                       0.06      0.16      4.54 f
+  bslice_pre/mult_51/ctmn_431077 (net)                       4
+  bslice_pre/ctmTdsLR_1_194604/Y (AOI21X2_LVT)                      0.05      0.19      4.73 r
+  bslice_pre/mult_51/ctmn_431108 (net)                       1
+  bslice_pre/ZINV_164_inst_53390/Y (INVX4_LVT)                      0.04      0.04      4.77 f
+  bslice_pre/ZINV_164_93 (net)                               4
+  bslice_pre/ctmTdsLR_1_31726/Y (AO21X1_LVT)                        0.05      0.12      4.89 f
+  bslice_pre/mult_51/ctmn_431601 (net)                       2
+  bslice_pre/ctmTdsLR_2_17993/Y (AO21X1_LVT)                        0.04      0.12      5.01 f
+  bslice_pre/popt_net_4294 (net)                             1
+  bslice_pre/ctmTdsLR_1_18087/Y (AO21X1_LVT)                        0.07      0.11      5.12 f
+  bslice_pre/mult_51/ctmn_431605 (net)                       8
+  bslice_pre/ctmTdsLR_1_40430/Y (NAND3X0_LVT)                       0.07      0.08      5.20 r
+  bslice_pre/ups_net_502307 (net)                            1
+  bslice_pre/ctmTdsLR_1_179774/Y (NAND2X0_LVT)                      0.04      0.05      5.26 f
+  bslice_pre/N469 (net)                                      1
+  bslice_pre/s1_op2_reg[3][43]/D (SDFFX2_LVT)                       0.04      0.00      5.26 f
+  data arrival time                                                                     5.26
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.68      5.78
+  clock reconvergence pessimism                                               0.03      5.81
+  bslice_pre/s1_op2_reg[3][43]/CLK (SDFFX2_LVT)                     0.05      0.00      5.81 r
+  clock uncertainty                                                          -0.20      5.61
+  library setup time                                                         -0.36      5.26
+  data required time                                                                    5.26
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.26
+  data arrival time                                                                    -5.26
+  ---------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -0.00
+
+
+
+  Startpoint: bslice_pre/s1_op1_reg[1][14] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_post/s2_op1_reg[3][2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.97      0.97
+
+  bslice_pre/s1_op1_reg[1][14]/CLK (SDFFX1_LVT)                     0.09      0.00      0.97 r
+  bslice_pre/s1_op1_reg[1][14]/Q (SDFFX1_LVT)                       0.09      0.32      1.29 r
+  bslice_pre/op1_out[142] (net)                              1
+  bslice_post/HFSBUF_1259_3347/Y (NBUFFX32_LVT)                     0.10      0.13      1.42 r
+  bslice_post/HFSNET_3241 (net)                             35
+  bslice_post/ctmi_104638/Y (XOR2X1_RVT)                            0.15      0.69      2.12 f
+  bslice_post/N467471 (net)                                  2
+  bslice_post/ctmi_104637/Y (AO22X1_RVT)                            0.10      0.38      2.50 f
+  bslice_post/N460651 (net)                                  1
+  bslice_post/A153086/S (FADDX1_LVT)                                0.09      0.29      2.79 r
+  bslice_post/N460648 (net)                                  1
+  bslice_post/A153090/S (FADDX1_LVT)                                0.07      0.22      3.01 f
+  bslice_post/N460665 (net)                                  1
+  bslice_post/A153092/CO (FADDX1_LVT)                               0.08      0.18      3.19 f
+  bslice_post/N460668 (net)                                  1
+  bslice_post/A153104/S (FADDX1_LVT)                                0.07      0.21      3.41 f
+  bslice_post/N460704 (net)                                  1
+  bslice_post/A153105/S (FADDX1_LVT)                                0.06      0.25      3.66 r
+  bslice_post/N460013 (net)                                  2
+  bslice_post/ctmi_103056/Y (NOR2X1_LVT)                            0.04      0.11      3.77 f
+  bslice_post/N460010 (net)                                  3
+  bslice_post/ctmi_103149/Y (OA21X1_LVT)                            0.07      0.14      3.91 f
+  bslice_post/N460127 (net)                                  5
+  bslice_post/ctmi_103148/Y (OA21X1_LVT)                            0.06      0.15      4.06 f
+  bslice_post/N460125 (net)                                  5
+  bslice_post/ctmi_103147/Y (OA21X1_LVT)                            0.05      0.13      4.18 f
+  bslice_post/N459993 (net)                                  2
+  bslice_post/ctmTdsLR_1_14583/Y (OA21X1_LVT)                       0.06      0.12      4.31 f
+  bslice_post/ups_net_508469 (net)                           2
+  bslice_post/ctmTdsLR_2_11812/Y (OA21X1_LVT)                       0.05      0.16      4.46 f
+  bslice_post/popt_net_1010 (net)                            1
+  bslice_post/ctmTdsLR_1_15832/Y (OA21X1_LVT)                       0.07      0.17      4.63 f
+  bslice_post/N466725 (net)                                  4
+  bslice_post/ctmTdsLR_1_205411/Y (OA21X1_LVT)                      0.05      0.13      4.76 f
+  bslice_post/N466686 (net)                                  1
+  bslice_post/ZBUF_299_inst_53028/Y (NBUFFX8_LVT)                   0.06      0.11      4.88 f
+  bslice_post/ZBUF_299_39 (net)                             10
+  bslice_post/ctmi_103940/Y (OA21X2_LVT)                            0.09      0.18      5.06 f
+  bslice_post/N466673 (net)                                  5
+  bslice_post/ctmTdsLR_1_232420/Y (MUX41X1_LVT)                     0.11      0.22      5.28 f
+  bslice_post/N253 (net)                                     1
+  bslice_post/ZBUF_2_inst_53453/Y (NBUFFX2_LVT)                     0.08      0.15      5.43 f
+  bslice_post/ZBUF_2_98 (net)                                1
+  bslice_post/s2_op1_reg[3][2]/D (SDFFX2_LVT)                       0.08      0.00      5.43 f
+  data arrival time                                                                     5.43
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.82      5.92
+  clock reconvergence pessimism                                               0.09      6.01
+  bslice_post/s2_op1_reg[3][2]/CLK (SDFFX2_LVT)                     0.04      0.00      6.01 r
+  clock uncertainty                                                          -0.20      5.81
+  library setup time                                                         -0.38      5.43
+  data required time                                                                    5.43
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.43
+  data arrival time                                                                    -5.43
+  ---------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -0.00
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op2_reg[1][54] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                                   Fanout   Trans      Incr      Path  
+  ---------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                            0.53      0.53
+
+  oeb_reg/CLK (SDFFASX1_LVT)                                        0.05      0.00      0.53 r
+  oeb_reg/Q (SDFFASX1_LVT)                                          0.10      0.39      0.92 r
+  oeb (net)                                                  1
+  gre_d_BUF_675_inst_74251/Y (NBUFFX32_LVT)                         0.08      0.14      1.07 r
+  gre_BUF_675_56 (net)                                      16
+  bslice_sram/sram[3]_ram/O[2] (SRAMLP1RW64x32)                     0.09      0.21      1.28 f
+  rop2[66] (net)                                             1
+  guide_buffer_86/Y (NBUFFX2_LVT)                                   0.04      0.11      1.39 f
+  guide_net_86 (net)                                         2
+  bslice_pre/HFSBUF_121_5601/Y (NBUFFX4_LVT)                        0.09      0.14      1.52 f
+  bslice_pre/HFSNET_2103 (net)                               1
+  bslice_pre/mult_50/ctmi_128206/Y (XNOR2X1_LVT)                    0.06      0.20      1.73 f
+  bslice_pre/mult_50/ctmn_434548 (net)                       1
+  bslice_pre/ctmTdsLR_1_27930/Y (OR2X2_LVT)                         0.08      0.15      1.87 f
+  bslice_pre/mult_50/ctmn_434549 (net)                       2
+  bslice_pre/HFSINV_215_5066/Y (INVX8_LVT)                          0.10      0.10      1.97 r
+  bslice_pre/HFSNET_1578 (net)                              30
+  bslice_pre/mult_50/ctmi_130875/Y (AO22X1_RVT)                     0.10      0.23      2.20 r
+  bslice_pre/mult_50/tmp_net154315 (net)                     1
+  bslice_pre/mult_50/U_5293/SO (HADDX1_RVT)                         0.13      0.34      2.54 f
+  bslice_pre/mult_50/tmp_net160098 (net)                     1
+  bslice_pre/mult_50/U_5303/S (FADDX1_LVT)                          0.08      0.30      2.84 r
+  bslice_pre/mult_50/tmp_net160118 (net)                     1
+  bslice_pre/mult_50/U_5310/S (FADDX1_LVT)                          0.07      0.22      3.06 f
+  bslice_pre/mult_50/tmp_net160132 (net)                     1
+  bslice_pre/mult_50/SGI10_164323/Y (INVX1_LVT)                     0.09      0.10      3.16 r
+  bslice_pre/mult_50/net_net_493588 (net)                    4
+  bslice_pre/ctmTdsLR_1_187946/Y (XOR3X1_LVT)                       0.10      0.28      3.44 r
+  bslice_pre/mult_50/tmp_net160144 (net)                     3
+  bslice_pre/ctmTdsLR_2_21070/Y (INVX0_HVT)                         0.08      0.11      3.56 f
+  bslice_pre/popt_net_5838 (net)                             1
+  bslice_pre/ctmTdsLR_1_21069/Y (OR2X1_LVT)                         0.03      0.13      3.68 f
+  bslice_pre/ups_net_498350 (net)                            1
+  bslice_pre/ctmTdsLR_1_28068/Y (NAND3X2_LVT)                       0.08      0.19      3.87 r
+  bslice_pre/mult_50/tmp_net160151 (net)                     6
+  bslice_pre/ctmTdsLR_2_62206/Y (INVX0_HVT)                         0.08      0.11      3.97 f
+  bslice_pre/tmp_net21947 (net)                              1
+  bslice_pre/ctmTdsLR_1_62248/Y (AO221X1_LVT)                       0.05      0.21      4.18 f
+  bslice_pre/popt_net_465 (net)                              1
+  bslice_pre/ctmTdsLR_1_62547/Y (AO22X1_LVT)                        0.05      0.11      4.28 f
+  bslice_pre/mult_50/tmp_net160213 (net)                     2
+  bslice_pre/ctmTdsLR_1_231393/Y (NAND2X2_LVT)                      0.07      0.16      4.44 r
+  bslice_pre/mult_50/ctmn_434433 (net)                       4
+  bslice_pre/ctmTdsLR_4_39013/Y (NAND2X0_RVT)                       0.08      0.09      4.53 f
+  bslice_pre/popt_net_14804 (net)                            1
+  bslice_pre/ctmTdsLR_1_62830/Y (NAND4X0_LVT)                       0.09      0.10      4.63 r
+  bslice_pre/ups_net_524182 (net)                            1
+  bslice_pre/ctmTdsLR_2_239209/Y (AO21X1_LVT)                       0.04      0.11      4.74 r
+  bslice_pre/ups_net_506705 (net)                            1
+  bslice_pre/ctmTdsLR_2_25991/Y (OR2X1_LVT)                         0.03      0.07      4.82 r
+  bslice_pre/popt_net_8139 (net)                             1
+  bslice_pre/ctmTdsLR_1_25990/Y (NAND3X0_LVT)                       0.06      0.06      4.87 f
+  bslice_pre/ups_net_522837 (net)                            1
+  bslice_pre/ctmTdsLR_1_235518/Y (AOI21X2_LVT)                      0.07      0.15      5.02 r
+  bslice_pre/ups_net_498367 (net)                            1
+  bslice_pre/ZINV_2017_inst_50269/Y (INVX8_LVT)                     0.06      0.06      5.08 f
+  bslice_pre/ZINV_2017_723 (net)                            36
+  bslice_pre/ctmTdsLR_1_63152/Y (AO221X1_LVT)                       0.07      0.22      5.30 f
+  bslice_pre/Nb497794 (net)                                  3
+  bslice_pre/ctmTdsLR_1_33455/Y (XNOR2X1_LVT)                       0.06      0.16      5.46 f
+  bslice_pre/N330 (net)                                      1
+  bslice_pre/s1_op2_reg[1][54]/D (SDFFX2_LVT)                       0.06      0.00      5.46 f
+  data arrival time                                                                     5.46
+
+  clock SYS_CLK (rise edge)                                                   5.10      5.10
+  clock network delay (propagated)                                            0.87      5.97
+  clock reconvergence pessimism                                               0.03      6.00
+  bslice_pre/s1_op2_reg[1][54]/CLK (SDFFX2_LVT)                     0.10      0.00      6.00 r
+  clock uncertainty                                                          -0.20      5.80
+  library setup time                                                         -0.34      5.46
+  data required time                                                                    5.46
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                    5.46
+  data arrival time                                                                    -5.46
+  ---------------------------------------------------------------------------------------------------
+  slack (MET)                                                                           0.00
+
+
+1

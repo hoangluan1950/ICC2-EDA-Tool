@@ -1,0 +1,387 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -derate
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Fri Jan  5 20:46:06 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[2]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                          Fanout   Trans     Derate     Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                          0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                            0.08      0.95      0.30      0.99 f
+  address[2] (net)                                  1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                         0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                         0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                16
+  bslice_sram/sram[2]_ram/A[2] (SRAMLP1RW64x32)            0.15      0.95      0.01      1.19 f
+  data arrival time                                                                      1.19
+
+  clock SYS_CLK (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.79      0.79
+  clock reconvergence pessimism                                               -0.04      0.75
+  bslice_sram/sram[2]_ram/CE (SRAMLP1RW64x32)              0.11      1.00      0.00      0.75 r
+  clock uncertainty                                                            0.10      0.85
+  library hold time                                                  1.00      0.25      1.10
+  data required time                                                                     1.10
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     1.10
+  data arrival time                                                                     -1.19
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.09
+
+
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[14]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                           Fanout   Trans     Derate     Incr      Path  
+  -----------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                     0.00      0.00
+  clock network delay (propagated)                                              0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                           0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                             0.08      0.95      0.30      0.99 f
+  address[2] (net)                                   1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                          0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                          0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                 16
+  bslice_sram/sram[14]_ram/A[2] (SRAMLP1RW64x32)            0.14      0.95      0.01      1.19 f
+  data arrival time                                                                       1.19
+
+  clock SYS_CLK (rise edge)                                                     0.00      0.00
+  clock network delay (propagated)                                              0.79      0.79
+  clock reconvergence pessimism                                                -0.04      0.74
+  bslice_sram/sram[14]_ram/CE (SRAMLP1RW64x32)              0.11      1.00      0.00      0.74 r
+  clock uncertainty                                                             0.10      0.84
+  library hold time                                                   1.00      0.25      1.10
+  data required time                                                                      1.10
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                      1.10
+  data arrival time                                                                      -1.19
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                             0.09
+
+
+
+  Startpoint: bslice_sram/ram_in_op1_r_reg[168] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[14]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.70      0.70
+
+  bslice_sram/ram_in_op1_r_reg[168]/CLK (SDFFX1_RVT)            0.07      0.95      0.00      0.70 r
+  bslice_sram/ram_in_op1_r_reg[168]/Q (SDFFX1_RVT)              0.05      0.95      0.29      0.99 f
+  bslice_sram/ram_in_op1_r[168] (net)                    1
+  gre_mt_inst_73018/A (NBUFFX4_HVT)                             0.05      0.95      0.00      0.99 f
+  gre_mt_inst_73018/Y (NBUFFX4_HVT)                             0.16      0.95      0.19      1.18 f
+  gre_net_27640 (net)                                    1
+  bslice_sram/sram[14]_ram/I[8] (SRAMLP1RW64x32)                0.16      0.95      0.00      1.18 f
+  data arrival time                                                                           1.18
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.79      0.79
+  clock reconvergence pessimism                                                    -0.06      0.73
+  bslice_sram/sram[14]_ram/CE (SRAMLP1RW64x32)                  0.11      1.00      0.00      0.73 r
+  clock uncertainty                                                                 0.10      0.83
+  library hold time                                                       1.00      0.25      1.08
+  data required time                                                                          1.08
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.08
+  data arrival time                                                                          -1.18
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.10
+
+
+
+  Startpoint: address_reg[1] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[14]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[1]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[1]/Q (SDFFX1_RVT)                                 0.09      0.95      0.31      0.99 f
+  address[1] (net)                                       1
+  HFSBUF_881_1408/A (NBUFFX32_HVT)                              0.09      0.95     -0.00      0.99 f
+  HFSBUF_881_1408/Y (NBUFFX32_HVT)                              0.15      0.95      0.20      1.20 f
+  HFSNET_1148 (net)                                     16
+  bslice_sram/sram[14]_ram/A[1] (SRAMLP1RW64x32)                0.15      0.95      0.01      1.21 f
+  data arrival time                                                                           1.21
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.79      0.79
+  clock reconvergence pessimism                                                    -0.04      0.74
+  bslice_sram/sram[14]_ram/CE (SRAMLP1RW64x32)                  0.11      1.00      0.00      0.74 r
+  clock uncertainty                                                                 0.10      0.84
+  library hold time                                                       1.00      0.25      1.10
+  data required time                                                                          1.10
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.10
+  data arrival time                                                                          -1.21
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.11
+
+
+
+  Startpoint: address_reg[0] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[14]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[0]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[0]/Q (SDFFX1_RVT)                                 0.10      0.95      0.32      1.00 f
+  address[0] (net)                                       1
+  HFSBUF_881_1409/A (NBUFFX32_HVT)                              0.10      0.95     -0.00      1.00 f
+  HFSBUF_881_1409/Y (NBUFFX32_HVT)                              0.15      0.95      0.20      1.20 f
+  HFSNET_1149 (net)                                     16
+  bslice_sram/sram[14]_ram/A[0] (SRAMLP1RW64x32)                0.16      0.95      0.01      1.21 f
+  data arrival time                                                                           1.21
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.79      0.79
+  clock reconvergence pessimism                                                    -0.04      0.74
+  bslice_sram/sram[14]_ram/CE (SRAMLP1RW64x32)                  0.11      1.00      0.00      0.74 r
+  clock uncertainty                                                                 0.10      0.84
+  library hold time                                                       1.00      0.25      1.10
+  data required time                                                                          1.10
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.10
+  data arrival time                                                                          -1.21
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.11
+
+
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[10]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                                 0.08      0.95      0.30      0.99 f
+  address[2] (net)                                       1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                              0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                              0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                     16
+  bslice_sram/sram[10]_ram/A[2] (SRAMLP1RW64x32)                0.14      0.95      0.00      1.19 f
+  data arrival time                                                                           1.19
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.77      0.77
+  clock reconvergence pessimism                                                    -0.04      0.73
+  bslice_sram/sram[10]_ram/CE (SRAMLP1RW64x32)                  0.08      1.00      0.00      0.73 r
+  clock uncertainty                                                                 0.10      0.83
+  library hold time                                                       1.00      0.24      1.07
+  data required time                                                                          1.07
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.07
+  data arrival time                                                                          -1.19
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.12
+
+
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[6]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                                 0.08      0.95      0.30      0.99 f
+  address[2] (net)                                       1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                              0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                              0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                     16
+  bslice_sram/sram[6]_ram/A[2] (SRAMLP1RW64x32)                 0.15      0.95      0.02      1.20 f
+  data arrival time                                                                           1.20
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.78      0.78
+  clock reconvergence pessimism                                                    -0.04      0.74
+  bslice_sram/sram[6]_ram/CE (SRAMLP1RW64x32)                   0.09      1.00      0.00      0.74 r
+  clock uncertainty                                                                 0.10      0.84
+  library hold time                                                       1.00      0.25      1.08
+  data required time                                                                          1.08
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.08
+  data arrival time                                                                          -1.20
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.12
+
+
+
+  Startpoint: address_reg[1] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[2]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[1]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[1]/Q (SDFFX1_RVT)                                 0.09      0.95      0.31      0.99 f
+  address[1] (net)                                       1
+  HFSBUF_881_1408/A (NBUFFX32_HVT)                              0.09      0.95     -0.00      0.99 f
+  HFSBUF_881_1408/Y (NBUFFX32_HVT)                              0.15      0.95      0.20      1.20 f
+  HFSNET_1148 (net)                                     16
+  bslice_sram/sram[2]_ram/A[1] (SRAMLP1RW64x32)                 0.15      0.95      0.02      1.22 f
+  data arrival time                                                                           1.22
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.79      0.79
+  clock reconvergence pessimism                                                    -0.04      0.75
+  bslice_sram/sram[2]_ram/CE (SRAMLP1RW64x32)                   0.11      1.00      0.00      0.75 r
+  clock uncertainty                                                                 0.10      0.85
+  library hold time                                                       1.00      0.25      1.10
+  data required time                                                                          1.10
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.10
+  data arrival time                                                                          -1.22
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.12
+
+
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[9]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                                 0.08      0.95      0.30      0.99 f
+  address[2] (net)                                       1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                              0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                              0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                     16
+  bslice_sram/sram[9]_ram/A[2] (SRAMLP1RW64x32)                 0.15      0.95      0.02      1.20 f
+  data arrival time                                                                           1.20
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.78      0.78
+  clock reconvergence pessimism                                                    -0.04      0.74
+  bslice_sram/sram[9]_ram/CE (SRAMLP1RW64x32)                   0.09      1.00      0.00      0.74 r
+  clock uncertainty                                                                 0.10      0.84
+  library hold time                                                       1.00      0.25      1.09
+  data required time                                                                          1.09
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.09
+  data arrival time                                                                          -1.20
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.12
+
+
+
+  Startpoint: address_reg[2] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_sram/sram[5]_ram (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                               Fanout   Trans     Derate     Incr      Path  
+  ---------------------------------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.68      0.68
+
+  address_reg[2]/CLK (SDFFX1_RVT)                               0.05      0.95      0.00      0.68 r
+  address_reg[2]/Q (SDFFX1_RVT)                                 0.08      0.95      0.30      0.99 f
+  address[2] (net)                                       1
+  HFSBUF_881_1407/A (NBUFFX32_HVT)                              0.08      0.95      0.00      0.99 f
+  HFSBUF_881_1407/Y (NBUFFX32_HVT)                              0.14      0.95      0.19      1.18 f
+  HFSNET_1147 (net)                                     16
+  bslice_sram/sram[5]_ram/A[2] (SRAMLP1RW64x32)                 0.15      0.95      0.02      1.20 f
+  data arrival time                                                                           1.20
+
+  clock SYS_CLK (rise edge)                                                         0.00      0.00
+  clock network delay (propagated)                                                  0.78      0.78
+  clock reconvergence pessimism                                                    -0.04      0.74
+  bslice_sram/sram[5]_ram/CE (SRAMLP1RW64x32)                   0.09      1.00      0.00      0.74 r
+  clock uncertainty                                                                 0.10      0.84
+  library hold time                                                       1.00      0.25      1.08
+  data required time                                                                          1.08
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                                          1.08
+  data arrival time                                                                          -1.20
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                 0.12
+
+
+1

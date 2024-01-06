@@ -1,0 +1,173 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by group
+Design : bslice
+Version: S-2021.06-SP5-1
+Date   : Thu Jan  4 17:38:20 2024
+****************************************
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op2_reg[3][56] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_125c
+  Scenario: ss_Cmax_125c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                     -0.12     -0.12
+
+  oeb_reg/CLK (SDFFASX1_LVT)                       0.00     -0.12 r
+  oeb_reg/Q (SDFFASX1_LVT)                         0.30      0.18 f
+  ZBUF_631_inst_52281/Y (NBUFFX32_LVT)             0.11      0.29 f
+  bslice_sram/sram[6]_ram/O[27] (SRAMLP1RW64x32)  -0.02      0.27 f
+  guide_buffer_179/Y (NBUFFX8_LVT)                 0.14      0.41 f
+  bslice_pre/ZINV_4060_inst_8417/Y (INVX8_LVT)     0.10      0.51 r
+  bslice_pre/ZINV_3771_inst_8415/Y (INVX32_LVT)    0.03      0.55 f
+  bslice_pre/mult_51/ctmi_127795/Y (XOR2X1_LVT)    0.18      0.72 r
+  bslice_pre/mult_51/ctmi_127794/Y (AO22X1_HVT)    1.38      2.10 r
+  bslice_pre/mult_51/U_6500/S (FADDX1_LVT)         0.26      2.36 f
+  bslice_pre/mult_51/U_6502/CO (FADDX1_LVT)        0.14      2.50 f
+  bslice_pre/mult_51/U_6508/S (FADDX1_RVT)         0.31      2.81 r
+  bslice_pre/mult_51/ctmi_122500/Y (AND2X1_RVT)    0.13      2.94 r
+  bslice_pre/mult_51/phfnr_buf_150744/Y (INVX0_HVT)
+                                                   0.14      3.07 f
+  bslice_pre/mult_51/ctmi_122846/Y (NAND2X0_RVT)   0.24      3.31 r
+  bslice_pre/ctmTdsLR_3_176443/Y (OR2X1_HVT)       0.64      3.95 r
+  bslice_pre/ctmTdsLR_2_34886/Y (OR2X2_HVT)        0.70      4.66 r
+  bslice_pre/ctmTdsLR_1_34885/Y (AO21X1_LVT)       0.08      4.73 r
+  bslice_pre/ctmTdsLR_1_27515/Y (NAND3X0_LVT)      0.05      4.79 f
+  bslice_pre/s1_op2_reg[3][56]/D (SDFFX2_LVT)      0.00      4.79 f
+  data arrival time                                          4.79
+
+  clock SYS_CLK (rise edge)                        5.10      5.10
+  clock network delay (ideal)                      0.07      5.17
+  bslice_pre/s1_op2_reg[3][56]/CLK (SDFFX2_LVT)    0.00      5.17 r
+  clock uncertainty                               -0.20      4.97
+  library setup time                              -0.18      4.79
+  data required time                                         4.79
+  ------------------------------------------------------------------------
+  data required time                                         4.79
+  data arrival time                                         -4.79
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op1_reg[3][56] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: func
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_func
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                     -0.14     -0.14
+
+  oeb_reg/CLK (SDFFASX1_LVT)                       0.00     -0.14 r
+  oeb_reg/Q (SDFFASX1_LVT)                         0.46      0.32 r
+  ZBUF_631_inst_52281/Y (NBUFFX32_LVT)             0.15      0.46 r
+  bslice_sram/sram[14]_ram/O[3] (SRAMLP1RW64x32)   0.28      0.75 f
+  guide_buffer_441/Y (NBUFFX32_LVT)                0.20      0.95 f
+  bslice_pre/mult_49/ctmi_136957/Y (XOR2X1_RVT)    0.60      1.55 f
+  bslice_pre/mult_49/ctmi_136956/Y (AO22X1_RVT)    0.38      1.94 f
+  bslice_pre/mult_49/U_5542/S (FADDX1_LVT)         0.28      2.22 r
+  bslice_pre/mult_49/U_5553/CO (FADDX1_LVT)        0.17      2.39 r
+  bslice_pre/ctmTdsLR_3_218849/Y (XOR3X2_LVT)      0.27      2.66 f
+  bslice_pre/ctmTdsLR_1_230210/Y (AO222X1_LVT)     0.24      2.90 f
+  bslice_pre/mult_49/U_5625/S (FADDX1_LVT)         0.29      3.18 r
+  bslice_pre/ctmTdsLR_14_178876/Y (XOR3X2_LVT)     0.27      3.45 f
+  bslice_pre/ctmTdsLR_1_236491/Y (INVX1_RVT)       0.09      3.55 r
+  bslice_pre/ctmTdsLR_6_178868/Y (AO21X1_LVT)      0.12      3.67 r
+  bslice_pre/mult_49/ctmi_133589/Y (NOR2X2_LVT)    0.13      3.80 f
+  bslice_pre/ctmTdsLR_4_29485/Y (INVX0_RVT)        0.07      3.88 r
+  bslice_pre/ctmTdsLR_2_29483/Y (NAND3X0_LVT)      0.07      3.95 f
+  bslice_pre/ctmTdsLR_1_29482/Y (OR2X2_LVT)        0.11      4.06 f
+  bslice_pre/ctmTdsLR_2_11569/Y (OR3X1_LVT)        0.11      4.17 f
+  bslice_pre/ctmTdsLR_1_51758/Y (OR2X1_LVT)        0.10      4.28 f
+  bslice_pre/ctmTdsLR_1_51716/Y (AND2X2_LVT)       0.11      4.39 f
+  bslice_pre/HFSINV_1723_1446/Y (INVX8_LVT)        0.08      4.47 r
+  bslice_pre/ctmTdsLR_1_30798/Y (AO21X2_LVT)       0.16      4.63 r
+  bslice_pre/ctmTdsLR_2_51908/Y (OR2X1_LVT)        0.09      4.71 r
+  bslice_pre/ctmTdsLR_1_51907/Y (NAND3X0_LVT)      0.06      4.77 f
+  bslice_pre/s1_op1_reg[3][56]/D (SDFFX2_LVT)      0.00      4.77 f
+  data arrival time                                          4.77
+
+  clock SYS_CLK (rise edge)                        5.10      5.10
+  clock network delay (ideal)                      0.18      5.28
+  bslice_pre/s1_op1_reg[3][56]/CLK (SDFFX2_LVT)    0.00      5.28 r
+  clock uncertainty                               -0.20      5.08
+  library setup time                              -0.33      4.75
+  data required time                                         4.75
+  ------------------------------------------------------------------------
+  data required time                                         4.75
+  data arrival time                                         -4.77
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: oeb_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: bslice_pre/s1_op1_reg[3][56] (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: test
+  Corner: ss_Cmax_m40c
+  Scenario: ss_Cmax_m40c_test
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                     -0.14     -0.14
+
+  oeb_reg/CLK (SDFFASX1_LVT)                       0.00     -0.14 r
+  oeb_reg/Q (SDFFASX1_LVT)                         0.46      0.32 r
+  ZBUF_631_inst_52281/Y (NBUFFX32_LVT)             0.15      0.46 r
+  bslice_sram/sram[14]_ram/O[3] (SRAMLP1RW64x32)   0.28      0.75 f
+  guide_buffer_441/Y (NBUFFX32_LVT)                0.20      0.95 f
+  bslice_pre/mult_49/ctmi_136957/Y (XOR2X1_RVT)    0.60      1.55 f
+  bslice_pre/mult_49/ctmi_136956/Y (AO22X1_RVT)    0.38      1.94 f
+  bslice_pre/mult_49/U_5542/S (FADDX1_LVT)         0.28      2.22 r
+  bslice_pre/mult_49/U_5553/CO (FADDX1_LVT)        0.17      2.39 r
+  bslice_pre/ctmTdsLR_3_218849/Y (XOR3X2_LVT)      0.27      2.66 f
+  bslice_pre/ctmTdsLR_1_230210/Y (AO222X1_LVT)     0.24      2.90 f
+  bslice_pre/mult_49/U_5625/S (FADDX1_LVT)         0.29      3.18 r
+  bslice_pre/ctmTdsLR_14_178876/Y (XOR3X2_LVT)     0.27      3.45 f
+  bslice_pre/ctmTdsLR_1_236491/Y (INVX1_RVT)       0.09      3.55 r
+  bslice_pre/ctmTdsLR_6_178868/Y (AO21X1_LVT)      0.12      3.67 r
+  bslice_pre/mult_49/ctmi_133589/Y (NOR2X2_LVT)    0.13      3.80 f
+  bslice_pre/ctmTdsLR_4_29485/Y (INVX0_RVT)        0.07      3.88 r
+  bslice_pre/ctmTdsLR_2_29483/Y (NAND3X0_LVT)      0.07      3.95 f
+  bslice_pre/ctmTdsLR_1_29482/Y (OR2X2_LVT)        0.11      4.06 f
+  bslice_pre/ctmTdsLR_2_11569/Y (OR3X1_LVT)        0.11      4.17 f
+  bslice_pre/ctmTdsLR_1_51758/Y (OR2X1_LVT)        0.10      4.28 f
+  bslice_pre/ctmTdsLR_1_51716/Y (AND2X2_LVT)       0.11      4.39 f
+  bslice_pre/HFSINV_1723_1446/Y (INVX8_LVT)        0.08      4.47 r
+  bslice_pre/ctmTdsLR_1_30798/Y (AO21X2_LVT)       0.16      4.63 r
+  bslice_pre/ctmTdsLR_2_51908/Y (OR2X1_LVT)        0.09      4.71 r
+  bslice_pre/ctmTdsLR_1_51907/Y (NAND3X0_LVT)      0.06      4.77 f
+  bslice_pre/s1_op1_reg[3][56]/D (SDFFX2_LVT)      0.00      4.77 f
+  data arrival time                                          4.77
+
+  clock SYS_CLK (rise edge)                        5.10      5.10
+  clock network delay (ideal)                      0.18      5.28
+  bslice_pre/s1_op1_reg[3][56]/CLK (SDFFX2_LVT)    0.00      5.28 r
+  clock uncertainty                               -0.20      5.08
+  library setup time                              -0.33      4.75
+  data required time                                         4.75
+  ------------------------------------------------------------------------
+  data required time                                         4.75
+  data arrival time                                         -4.77
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+1
