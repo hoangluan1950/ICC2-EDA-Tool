@@ -1,0 +1,108 @@
+awk 'FNR==NR {endpoint[NR]=$1; next} {print endpoint[FNR],$1}' endpoint path
+
+redirect -file /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Release/Log_file/CTS_design.log {source -echo -verbose -continue_on_error /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Work/Design/scripts/05_cts_design.tcl} 
+
+redirect -file /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Release/Log_file/PostCTS_design.log {source -echo -verbose -continue_on_error /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Work/Design/scripts/06_post_cts_design.tcl}
+
+
+redirect -file /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Release/Log_file/Route_design.log {source -echo -verbose -continue_on_error /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Work/Design/scripts/07_route_design.tcl}
+ 
+redirect -file /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Release/Log_file/RouteOpt_design.log {source -echo -verbose -continue_on_error /home/shtp/SUNEDU/PD_K2_EXAM_ThaiHoangLuan/Work/Design/scripts/08_routeOpt_design.tcl}
+
+
+
+
+get_cells -p -o [ get_net -p -o [get_ports *]] -f "ref_name=~ISO*"
+ 
+
+get_port -o [get_net -o [get_cells -p -o [ get_net -p -o [get_ports *]] -f "ref_name=~ISO*"] ]
+
+
+### 
+set port [get_port *]
+set port_ISO [get_port -o [get_net -o [get_cells -p -o [ get_net -p -o [get_ports *]] -f "ref_name=~ISO*"] ]]
+set port_no_ISO [remove_from_collection $port $port_ISO]
+set port_no_ISO_no_clk [remove_from_collection $port_no_ISO clk]
+add_buffer -new_net_names boundary_net -new_cell_names boundary_buffer -lib_cell saed32_rvt|saed32_rvt_std/NBUFFX4_RVT $port_no_ISO_no_clk
+add_buffer -inverter_pair -new_net_names boundary_net -new_cell_names boundary_buffer -lib_cell saed32_rvt|saed32_rvt_std/INVX4_RVT [get_port clk]
+magnet_placement -cells [get_cells -p *boundary_buffer*] $port
+set_attribute [get_cells -p *boundary_buffer*] -name physical_status -value legalize_only
+legalize_placement
+set_size_only [get_cells -p *boundary_buffer*]
+
+
+###
+set pin [get_pins -p -o [get_cells -p -f "design_type==macro"] -f "port_type==signal && direction==out"]
+add_buffer -new_net_names guide_net -new_cell_names guide_buffer -lib_cell saed32_rvt|saed32_rvt_std/NBUFFX4_RVT $pin 
+magnet_placement -cells [get_cells -p *guide_buffer*] $pin
+set_attribute [get_cells -p *guide_buffer*] -name physical_status -value legalize_only
+set_size_only [get_cells -p *guide_buffer*]
+legalize_placement 
+###
+open_lib nlib/bslice_cts.nlib/
+list_blocks
+open_block bslice.design
+link_block
+
+legalize_placement
+route_eco
+route_detail 
+!report_q
+
+
+route_opt
+route_opt
+
+exec csh -c
+
+
+open_lib nlib/bslice_routeOpt.nlib/
+     2  history
+     3  rq
+     4  list_blocks
+     5  open_block bslice.design
+     6  rq
+     7  report_qor -summary
+     8  for {set i 0} {$i<100} {incr i} {source 11_eco_01.tcl}
+     9  rq
+    10  report_qor -summary
+    11  legalize_placement
+    12  route_eco
+    13  route_detail
+    14  rq
+    15  report_qor -summary
+    16  for {set i 0} {$i<100} {incr i} {source 11_eco_01.tcl}
+    17  rq
+    18  report_qor -summary
+    19  for {set i 0} {$i<100} {incr i} {source 11_eco_01.tcl}
+    20  report_qor -summary
+    21  legalize_placement
+    22  route_eco
+    23  route_detail
+    24  report_qor -summary
+    25  save_lib
+
+foreach_in_collection net [get_net -p -o [get_port -f "port_type==signal"]] {
+set dr_length [get_att [get_net -p $net ] dr_length]
+echo "$net \t $dr_length" 
+}
+
+foreach_in_collection net [get_net -p -o [get_port -f "port_type==signal"]] {
+set vr_length [get_att [get_net -p $net ] vr_length]
+echo "$net \t $vr_length"
+}
+
+awk 'FNR==NR {dr_file[FNR]=$1; vr_file[FNR]==$2;  next} {print dr_file[FNR],vr_file[FNR]/$2}' dr_file vr_file > detour_file
+
+awk 'FNR==NR {dr_length_to_port_rtp[FNR]=$1; vr_length_to_port_rpt[FNR]=$2; next} {print dr_length_to_port_rtp[FNR], vr_length_to_port_rpt[FNR]/$2}' dr_length_to_port.rtp vr_length_to_port.rpt > Detour_net_to_port.rpt
+
+ report_timing -max_paths 100 -slack_lesser_than 0 > timing_path.rpt
+     exec csh -c {less timing_path.rpt|awk '/Endpoint/ {print "add_buffer -new_net_names luan_net -new_cell_names luan_cell -inverter_pair -lib_cell saed32_rvt|saed32_rvt_std/INVX4_RVT  "$2"/CLK"}' } > add_INV_script
+     source add_INV_script
+
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+
+
+

@@ -1,0 +1,294 @@
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+save_lib
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal4} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal4} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal4} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal4} -quiet]
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+save_lib
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal9} -quiet]
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+save_lib
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal1} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal1} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal4} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal3} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+route_detail
+gui_show_error_data
+save_lib
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal1} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_show_error_data
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal1} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal5} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal6} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal3} -quiet]
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal8} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal9} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal1} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal7} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+route_detail
+gui_show_error_data
+save_lib
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal3} -quiet]
+gui_show_error_data
+gui_show_error_data
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+gui_set_layout_layer_visibility -toggle [get_layers -filter {mask_name == metal2} -quiet]
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
+gui_show_error_data
+save_lib
+gui_show_error_data
+gui_show_error_data
+check_lvs -checks {floating_routes}
+gui_show_error_data
+check_lvs -checks {floating_routes} -max_errors 0 -open_reporting detailed
+gui_show_error_data
+check_lvs -checks {floating_routes} -max_errors 0 -open_reporting detailed > floating_route.rpt
+gui_zoom -window [gui_get_current_window -view] -rect {{1697.7720 2.0000} {1697.7720 2.0000}} -fit
+gui_zoom -window [gui_get_current_window -view] -rect {{1697.7720 2.0000} {1698.3800 625.6560}} -fit
+exec csh -c {less floating_route.rpt }
+exec csh -c {less floating_route.rpt|awk '$10,$11,$12,$13'
+
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12,$13}'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11}'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'|sed 's/$.//g'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'|sed 's/.$//g'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'|sed 's/.$//g'
+}
+get_shapes -within (1671.0200 2.0000)(1671.6280 625.6560)
+get_shapes -within {(1671.0200 2.0000)(1671.6280 625.6560)}
+get_shapes -touching {(1671.0200 2.0000)(1671.6280 625.6560)}
+get_shapes -touching {{1671.0200 2.0000}{1671.6280 625.6560}}
+get_shapes -touching {{1671.0200 2.0000} {1671.6280 625.6560}}
+get_shapes -within {{1671.0200 2.0000} {1671.6280 625.6560}}
+change_selection [ get_shapes -within {{1671.0200 2.0000} {1671.6280 625.6560}}]
+gui_show_error_data
+gui_show_error_data
+change_selection [ get_shapes -within {{1671.0200 2.0000} {1671.6280 625.6560}}]
+get_shapes -within {{1671.0200 2.0000} {1671.6280 625.6560}}
+get_shapes -intersect {{1671.0200 2.0000} {1671.6280 625.6560}}
+get_shapes -at {{1671.0200 2.0000} {1671.6280 625.6560}}
+get_shapes -at {{1671.0200 2.0000}}
+get_shapes -at {1671.0200 2.0000}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'|sed 's/.$//g'
+}
+exec csh -c {less floating_route.rpt|awk '{print $10,$11,$12}'|sed 's/.$//g'
+} > shape_bbox
+get_shapes -touching {{1671.0200 2.0000} {1671.6280 625.6560}}
+gui_show_error_data
+gui_show_error_data
+create_pg_vias -from_layers M8 -to_layers M9 -nets VDD_LOW
+check_lvs -checks {floating_routes} -max_errors 0 -open_reporting detailed > floating_route.rpt
+gui_show_error_data
+check_lvs -checks floating_routes -max_errors 0
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+gui_show_error_data
+check_lvs -checks floating_routes -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_report_errors -file flooting
+gui_report_errors -file floating
+get_shapes -touching {{509.984 623.669} {510.592 625.656}} -f "layer_name==M4"
+gui_show_error_data
+gui_report_errors -file fix_floating_route
+exec csh -c {less fix_floating_route  }
+exec csh -c {less fix_floating_route|awk '{print $9,$11,$12'  }
+}
+exec csh -c {less fix_floating_route|awk '{print $9,$11,$12'}  }
+exec csh -c {less fix_floating_route|awk '{print $10,$11,$12'}  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13'}  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14'}  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f layer_name=="$1 }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f "layer_name=="$1 }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1 }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" " }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" -touching " }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" -touching  ",$2,$3 }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" -touching  ",$2,$3,$4,$5 }'  }
+get_shapes -f "layer_name==M4" -touching   {28.448 623.669} {29.056 625.656}
+get_shapes -f "layer_name==M4" -touching   {{28.448 623.669} {29.056 625.656}}
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" -touching  ",$2,$3,$4,$5 }'  }
+exec csh -c {less fix_floating_route|awk '{print $10,$12,$13,$14,$15'}|awk '{print "get_shapes -f \"layer_name=="$1"\" -touching  ",$2,$3,$4,$5 }'  } > delete_floating_script
+exec csh -c {less delete_floating_script|sed 's/(//g'  }
+exec csh -c {less delete_floating_script|sed 's/(/{/g'  }
+}
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|awk 's/\)/\}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|awk 's/\)/}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|awk 's/)/}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|awk 's/)/\}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|awk 's/\)/\}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|sed 's/\)/\}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|sed 's/\)/}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'|sed 's/\)/\}/g'  }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g'  }
+exec csh -c {less delete_floating_script|sed 's/) \{/\} \{/g' }
+exec csh -c {less delete_floating_script }
+exec csh -c {less delete_floating_script|sed 's/\(/\{/g' }
+exec csh -c {less delete_floating_script|sed 's/\(/\{/g' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'}
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|sed 's/touching   \{/touching   \{\{/g' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|sed 's/touching   \{/touching   \{{/g' }
+}
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|sed 's/touching   \{/touching   \{\{/g' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk 'print "{"$5 ' }
+}
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print "{"$5} ' }
+}
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print "\{"$5 } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print $1,$2,$3,$4, "\{"$5,$6,$7,$8 } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print $1,$2,$3,$4, "\{"$5,$6,$7,$8"\}" } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print $1,$2,$3,$4, "\{"$5,$6,$7,$8"}" } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print $1,$2,$3,$4, "\{"$5,$6,$7,$8"\}" } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print $1,$2,$3,$4, "\{"$5,$6,$7,$8"\}\]" } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print "remove_object [" $1,$2,$3,$4, "\{"$5,$6,$7,$8"\}\]" } ' }
+exec csh -c {less delete_floating_script|sed 's/(/\{/g' | sed 's/)/\}/g'|awk '{print "remove_object [" $1,$2,$3,$4, "\{"$5,$6,$7,$8"\}\]" } ' } > delete_floating
+gui_show_error_data
+te
+source delete_floating
+check_lvs -checks floating_routes -max_errors 0 -open_reporting detailed
+gui_show_error_data
+gui_show_error_data
+save_lib
+check_pg_drc
+check_route -drc true
+check_lvs -max_errors 0 -open_reporting detailed
